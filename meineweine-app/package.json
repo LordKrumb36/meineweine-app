@@ -7,6 +7,7 @@
     "dev": "vite",
     "start-sync": "node server.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run start-sync\"",
+    "sync:all": "node ../sync_to_export.js && node ../sync_weine.js",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
