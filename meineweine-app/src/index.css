@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wine-50: #fdf2f2;
+  --color-wine-100: #fde6e6;
+  --color-wine-200: #facdcd;
+  --color-wine-300: #f2a6a6;
+  --color-wine-400: #e67373;
+  --color-wine-500: #d64646;
+  --color-wine-600: #b92b2b;
+  --color-wine-700: #9b2121;
+  --color-wine-800: #7e1d1d;
+  --color-wine-900: #6a1d1d;
+  --color-wine-950: #3b0b0b;
+}
+
+:root {
+  --wine-dark: #3b0b0b;
+  --wine-primary: #9b2121;
+}
+
+body {
+  @apply bg-stone-50 text-stone-900 font-sans;
+}
+
+.wine-gradient {
+  background: linear-gradient(135deg, #3b0b0b 0%, #9b2121 100%);
+}

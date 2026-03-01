@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "1",
+    "name": "Weninger Kékfrankos Balf 2020 (AT)",
+    "drinkingWindow": "2023 – 2030",
+    "rating": "91/100 (Lobenberg)",
+    "price": "€11.90",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 4,
+    "userComment": "Leicht säuerlich. Naturweinnote. Harmonisch"
+  },
+  {
+    "id": "2",
+    "name": "Venus La Universal Dido 2022 (ES)",
+    "drinkingWindow": "2024 – 2030+",
+    "rating": "93/100 (Parker)",
+    "price": "€19.90",
+    "taste": "pikant & würzig (fruchtbetont)",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "3",
+    "name": "Jorge Navascués Mancuso Garnacha 2021 (ES)",
+    "drinkingWindow": "2025 – 2038",
+    "rating": "95/100 (Lobenberg)",
+    "price": "€18.50",
+    "taste": "pikant & würzig strukturiert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "4",
+    "name": "i Clivi Schioppettino 2023 (IT)",
+    "drinkingWindow": "ab 2025",
+    "rating": "95/100 (Lobenberg)",
+    "price": "~$25.00*",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "5",
+    "name": "Finca Feliz Tesoro Malbec 2025 (AR)",
+    "drinkingWindow": "2026 – 2034",
+    "rating": "95/100 (Lobenberg)",
+    "price": "~$15.00*",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "6",
+    "name": "Weninger Ponzichter 2024 (AT)",
+    "drinkingWindow": "2025 – 2030",
+    "rating": "91/100 (Lobenberg)",
+    "price": "€11.50",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "7",
+    "name": "Le Pupille Morellino di Scansano Riserva 2022 (IT)",
+    "drinkingWindow": "2025 – 2035",
+    "rating": "94/100 (Suckling)",
+    "price": "€21.90",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "8",
+    "name": "Vaglio Chango Cuvée 2019 (AR)",
+    "drinkingWindow": "2022 – 2034",
+    "rating": "95/100 (Lobenberg)",
+    "price": "€17.50",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "9",
+    "name": "Agricole Vallone Castel Serranova 2019 (IT)",
+    "drinkingWindow": "2022 – 2030",
+    "rating": "95/100 (Lobenberg)",
+    "price": "€13.50",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "10",
+    "name": "Villa Saletta Chianti Superiore 2019 (IT)",
+    "drinkingWindow": "2022 – 2032",
+    "rating": "90-92/100 (Est.)",
+    "price": "€15.50",
+    "taste": "pikant & würzig (elegant)",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "11",
+    "name": "Bodegas y Vinedos Ponce Buena Pinta Moravia Agria 2024 (ES)",
+    "drinkingWindow": "2026 – 2042",
+    "rating": "95/100 (Lobenberg)",
+    "price": "€11.90",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": "Säuerlich und fad"
+  },
+  {
+    "id": "12",
+    "name": "Le Sacre Janoueix Chateau Le Sacre St. Georges 2023 (FR)",
+    "drinkingWindow": "ab 2026",
+    "rating": "95+/100 (Lobenberg)",
+    "price": "€19.00",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "13",
+    "name": "Can Rafols dels Caus Terraprima Tinto 2022 (ES)",
+    "drinkingWindow": "2024 – 2030+",
+    "rating": "92/100 (Est.)",
+    "price": "€13.80",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": "Gute Nase, cremig, kein Holz, schmackhaft"
+  },
+  {
+    "id": "14",
+    "name": "Adega Algueira Patrimonio 2018 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "93/100 (Lobenberg)",
+    "price": "€18.90",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "15",
+    "name": "Le Pupille Morellino di Scansano 2023 (IT)",
+    "drinkingWindow": "2024 – 2033",
+    "rating": "90/100 (Parker)",
+    "price": "€11.90",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "16",
+    "name": "Sainte Léocadie Cuvée Leukadios Rouge 2022 (FR)",
+    "drinkingWindow": "2024 – 2026",
+    "rating": "90/100 (Lobenberg)",
+    "price": "€9.90",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": "Auch besser am nächsten Tag. leichte Frucht, süffig, aber bisschen fad"
+  },
+  {
+    "id": "17",
+    "name": "Sainte Léocadie Cuvee Les Clauses 2022 (FR)",
+    "drinkingWindow": "2024 – 2033",
+    "rating": "91-92/100 (Lobenberg)",
+    "price": "€11.00",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": "Besser am nächsten Tag. Musste atmen. Erster Eindruck Frucht, dann kommt die Säure"
+  },
+  {
+    "id": "18",
+    "name": "Felsina Chianti Colli Senesi Farnetella 2022 (IT)",
+    "drinkingWindow": "2025 – 2031",
+    "rating": "92/100 (Lobenberg)",
+    "price": "€11.90",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "19",
+    "name": "Knipser Cuvée Gaudenz trocken 2019 (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (Vivino)",
+    "price": "~€14.00*",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "20",
+    "name": "Roc de Levraut Grand Roc Bordeaux Superieur 2022 (FR)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (Lobenberg)",
+    "price": "€13.15",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "21",
+    "name": "Monte Antico Monte Antico 2021 (IT)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (Suckling)",
+    "price": "€16.00*",
+    "taste": "pikant & würzig (saftig)",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "22",
+    "name": "Weninger Ponzichter 2023 (AT)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (Est.)",
+    "price": "€12.00",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "23",
+    "name": "Hanspeter Ziereisen Blauer Spätburgunder trocken 2022 (DE)",
+    "drinkingWindow": "sofort",
+    "rating": "94/100 (Falstaff)",
+    "price": "€10.80",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": "Fruchtig bezaubernde Nase. Holznote, deutliche Säure, frisch, nicht zu schwer, gut ausbalanciert. Positive Überraschung!"
+  },
+  {
+    "id": "24",
+    "name": "Hanspeter Ziereisen Blauer Spätburgunder TS (ehemals Tschuppen) trocken 2022 (DE)",
+    "drinkingWindow": "2024 – 2032",
+    "rating": "91/100 (Wine Adv.)",
+    "price": "€12.90",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "25",
+    "name": "Villa des Croix Pinot Noir 2023 (FR)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (Lobenberg)",
+    "price": "€9.95",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": "Preiswert. Fruchtige Nase. Harmonische Säure. Guter Alltagswein"
+  },
+  {
+    "id": "26",
+    "name": "Alvaro Castro Dao Alvaro Castro 2021 (PT)",
+    "drinkingWindow": "2024 – 2030+",
+    "rating": "91/100 (Lobenberg)",
+    "price": "€12.50",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": "Uninteressant"
+  },
+  {
+    "id": "27",
+    "name": "Daumas Gassac / Aime Guibert Guilhem Rouge 2023 (FR)",
+    "drinkingWindow": "2025 – 2035",
+    "rating": "92/100 (Est.)",
+    "price": "€8.95",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": "relativ langweilig"
+  },
+  {
+    "id": "28",
+    "name": "Casa Castillo Casa Castillo Monastrell 2023 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "93/100 (Parker)",
+    "price": "€11.00",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": "Vanillenote, wenig Säure, harmonisch"
+  },
+  {
+    "id": "29",
+    "name": "Knipser Blauer Spätburgunder Gutswein trocken 2020 (DE)",
+    "drinkingWindow": "bis 2027",
+    "rating": "93/100 (Lobenberg)",
+    "price": "€12.75",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 3,
+    "userComment": "Nicht schlecht"
+  },
+  {
+    "id": "30",
+    "name": "4 Kilos Motor 2020 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (Est.)",
+    "price": "~€22.50*",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "31",
+    "name": "Alegre Valganon Garnacha Tinto 2019 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "93/100 (Lobenberg)",
+    "price": "€17.00*",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "32",
+    "name": "Alegre Valgañón Garnacha Tinto 2020 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "93/100 (Est.)",
+    "price": "~€20.00*",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "33",
+    "name": "Raul Perez La Vizcaina La Poulosa Mencia 2021 (ES)",
+    "drinkingWindow": "2023 – 2028",
+    "rating": "95/100 (Lobenberg)",
+    "price": "€22.00*",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "34",
+    "name": "du Retout Chateau du Retout Cru Bourgeois Supérieur 2020 (FR)",
+    "drinkingWindow": "2026 – 2045",
+    "rating": "96+/100 (Lobenberg)",
+    "price": "€18.50",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "35",
+    "name": "Heinrich Pinot Noir 2022 (AT)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Est.)",
+    "price": "€12.50",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 4,
+    "userComment": "Typisches Maische Natur-Wein Aroma. Guter Wein!"
+  },
+  {
+    "id": "36",
+    "name": "Remelluri – Telmo Rodriguez Lindes de Remelluri - Vinedos de Labastida 2020 (ES)",
+    "drinkingWindow": "2024 – 2042",
+    "rating": "93/100 (Est.)",
+    "price": "€13.90",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "37",
+    "name": "Castro Ventosa De La Familia Perez Valtuille Vino de Villa 2021 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "94/100 (Parker)",
+    "price": "€27.00",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "38",
+    "name": "Heinrich Naked Rosé 2023 (AT)",
+    "drinkingWindow": "2024 – 2027",
+    "rating": "91/100 (Lobenberg)",
+    "price": "€13.00",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "39",
+    "name": "Artuke Artuke 2023 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Est.)",
+    "price": "€10.90",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 3,
+    "userComment": "Okay, aber zu teuer"
+  },
+  {
+    "id": "40",
+    "name": "G.D. Vajra Claré J.C. Langhe Nebbiolo 2023 (IT)",
+    "drinkingWindow": "2024 – 2036",
+    "rating": "94+/100 (Lobenberg)",
+    "price": "€17.90",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "41",
+    "name": "Gago Viticultores – Telmo Rodriguez Dehesa Gago Tinta de Toro 2023 (ES)",
+    "drinkingWindow": "2025 – 2031",
+    "rating": "90+/100 (Lobenberg)",
+    "price": "€11.50",
+    "taste": "kraftvoll, würzig & konzentriert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "42",
+    "name": "Bodegas y Vinedos Ponce P.F 2023 (ES)",
+    "drinkingWindow": "bis 2033+",
+    "rating": "96+/100 (Parker)",
+    "price": "~€19.00*",
+    "taste": "elegant, mineralisch & feingliedrig",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "43",
+    "name": "Kracher - Weinlaubenhof Zweigelt 2019 (AT)",
+    "drinkingWindow": "2023 – 2030",
+    "rating": "89/100 (Lobenberg)",
+    "price": "€12.00*",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "44",
+    "name": "Bodegas y Vinedos Ponce Clos Lojen 2023 (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "93/100 (Parker)",
+    "price": "€10.60",
+    "taste": "fruchtbetont, seidig & aromatisch",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "45",
+    "name": "Häußermann Spätburgunder trocken (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€8.00",
+    "taste": "trocken",
+    "userRating": 4,
+    "userComment": "Schöne Säure, aber nicht zu dominant. Gut!"
+  },
+  {
+    "id": "46",
+    "name": "Häußermann Trollinger Urgestein trocken (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€8.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "47",
+    "name": "Häußermann Cabernet Dorsa trocken (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€9.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "48",
+    "name": "Häußermann Lemberger Premium trocken (DE)",
+    "drinkingWindow": "2026 – 2030",
+    "rating": "-",
+    "price": "€12.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "49",
+    "name": "Häußermann Merlot Premium trocken (DE)",
+    "drinkingWindow": "2026 – 2030",
+    "rating": "-",
+    "price": "€12.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "50",
+    "name": "Häußermann Spätburgunder Premium trocken (DE)",
+    "drinkingWindow": "2026 – 2030",
+    "rating": "-",
+    "price": "€12.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "51",
+    "name": "Häußermann Hüsern 6 Cuvée rot Premium trocken (DE)",
+    "drinkingWindow": "2026 – 2030",
+    "rating": "-",
+    "price": "€12.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "52",
+    "name": "Häußermann Lemberger Reserve trocken (DE)",
+    "drinkingWindow": "2026 – 2035",
+    "rating": "-",
+    "price": "€20.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "53",
+    "name": "Häußermann Merlot Reserve trocken (DE)",
+    "drinkingWindow": "2026 – 2035",
+    "rating": "-",
+    "price": "€20.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "54",
+    "name": "Häußermann Pinot Noir Reserve trocken (DE)",
+    "drinkingWindow": "2026 – 2035",
+    "rating": "-",
+    "price": "€22.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "55",
+    "name": "Häußermann Großer Fuchs trocken (DE)",
+    "drinkingWindow": "2026 – 2035",
+    "rating": "-",
+    "price": "€20.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "56",
+    "name": "Häußermann Rosé Saignée trocken (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€8.00",
+    "taste": "trocken",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "57",
+    "name": "Violante Nero di troia rivera 2017",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.5 / 5 (Vivino)",
+    "price": "~$12.00",
+    "taste": "fruchtbetont",
+    "userRating": 4,
+    "userComment": "Schwarz Mainburg gut trinkbar"
+  },
+  {
+    "id": "58",
+    "name": "Santa Lucia Cavalcina 2017",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "87/100 (Critic)",
+    "price": "~$10.00",
+    "taste": "leicht & fruchtbetont",
+    "userRating": 2,
+    "userComment": "Schwarz Mainburg 11,90 deutlich teurer, aber nichts besonderes"
+  },
+  {
+    "id": "59",
+    "name": "Rosso di Montalcino Camigliano 2019",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (JS)",
+    "price": "~$25.00",
+    "taste": "elegant & beerig",
+    "userRating": 3,
+    "userComment": "Okay"
+  },
+  {
+    "id": "60",
+    "name": "San Lorenzo Uma I Ronchi Rosso Coneeo",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (Critic)",
+    "price": "~$18.00",
+    "taste": "strukturiert & fruchtig",
+    "userRating": 3,
+    "userComment": "Not bad"
+  },
+  {
+    "id": "61",
+    "name": "Chateau Boutillot Bordeaux 2020",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "86/100 (JS)",
+    "price": "~$12.00",
+    "taste": "fruchtbetont",
+    "userRating": 5,
+    "userComment": "Sehr gut für den Preis"
+  },
+  {
+    "id": "62",
+    "name": "Chateau de Grezels Cahors 2020",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (Critic)",
+    "price": "~$14.00",
+    "taste": "kräftig & würzig",
+    "userRating": 4,
+    "userComment": "Gut um 6€"
+  },
+  {
+    "id": "63",
+    "name": "Close de la Pero here Graves 2016",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.7 / 5 (Vivino)",
+    "price": "~$15.00",
+    "taste": "ausgewogen",
+    "userRating": 5,
+    "userComment": "Von der Gemeinschaft für lecker befunden"
+  },
+  {
+    "id": "64",
+    "name": "Chateau Morillon Blaye",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.8 / 5 (Vivino)",
+    "price": "~$10.00",
+    "taste": "fruchtig",
+    "userRating": 4,
+    "userComment": "Gut"
+  },
+  {
+    "id": "65",
+    "name": "Bourgogne Cotes D'Auxerre Corps de Garde Goisot",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "4.0 / 5 (Vivino)",
+    "price": "~$34.00",
+    "taste": "elegant & mineralisch",
+    "userRating": 4,
+    "userComment": "Demeter Restaurant Gut"
+  },
+  {
+    "id": "66",
+    "name": "Germoglio Sangiovese",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "~$15.00",
+    "taste": "fruchtbetont",
+    "userRating": 2,
+    "userComment": "Schwarz Mainburg nichts besonderes"
+  },
+  {
+    "id": "67",
+    "name": "150+1 Piedmont Doc Barbera",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "87/100 (WE)",
+    "price": "~$15.00",
+    "taste": "süffig & fruchtig",
+    "userRating": 0,
+    "userComment": "Weinland Giesing Safferts Winzer Welt süffig, bisschen süß"
+  },
+  {
+    "id": "68",
+    "name": "Valdeus Premium 2020 Lisboa",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.7 / 5 (Vivino)",
+    "price": "~$9.00",
+    "taste": "fruchtig",
+    "userRating": 4,
+    "userComment": "Weinberg Giesing Um 10€ gut, aber nichts besonderes"
+  },
+  {
+    "id": "69",
+    "name": "Tufivecchi Salice Salentino",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.5 / 5 (Vivino)",
+    "price": "€16.00",
+    "taste": "würzig & süßlich",
+    "userRating": 0,
+    "userComment": "Weinberg. Süßlich mit Säure und Holznote. Eigenwillig, aber teuer"
+  },
+  {
+    "id": "70",
+    "name": "Vinhas de Xisto Reserva",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (WE)",
+    "price": "~$17.00",
+    "taste": "kräftig & strukturiert",
+    "userRating": 3,
+    "userComment": "Nicht schlecht aber zu teuer"
+  },
+  {
+    "id": "71",
+    "name": "Fatalone Primitivo",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "92/100 (JS)",
+    "price": "~$24.00",
+    "taste": "schwer & süßlich",
+    "userRating": 1,
+    "userComment": "Schwarz. Sehr schwer, süßlich, nicht empfehlenswert"
+  },
+  {
+    "id": "72",
+    "name": "Chateau de Lagarde Cuvee Bordeaux",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (W-S)",
+    "price": "~$14.00",
+    "taste": "fruchtig (Bio)",
+    "userRating": 5,
+    "userComment": "Preiswert gut Super U"
+  },
+  {
+    "id": "73",
+    "name": "Chateau La Rose Du Pin Bordeaux 2016",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (WE)",
+    "price": "~$15.00",
+    "taste": "beerig & ausgewogen",
+    "userRating": 2,
+    "userComment": "Billig, aber nichts besonderes"
+  },
+  {
+    "id": "74",
+    "name": "Chateau Pont de la Tonnelle 2020 Cotes de Bourg",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "Gold (G&G)",
+    "price": "~$13.00",
+    "taste": "fruchtig & würzig",
+    "userRating": 4,
+    "userComment": "Holz und gute Frucht Säure Balance. Preiswert"
+  },
+  {
+    "id": "75",
+    "name": "Cuvée Hortense Entre-deux-Mers",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.5 / 5 (Vivino)",
+    "price": "€8.00",
+    "taste": "frisch & aromatisch",
+    "userRating": 5,
+    "userComment": "Super U interessantes Holz Aroma. Süffig!"
+  },
+  {
+    "id": "76",
+    "name": "CHATEAU LESTRIBEAU Bordeaux 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.7 / 5 (Vivino)",
+    "price": "€8.00",
+    "taste": "beerig & weich",
+    "userRating": 5,
+    "userComment": "Super U nichts mehr"
+  },
+  {
+    "id": "77",
+    "name": "CHÂTEAU GUIRAUD-GRIMARD Cotes de Bourg 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "Hachette Rec.",
+    "price": "€7.00",
+    "taste": "strukturiert & holzig",
+    "userRating": 1,
+    "userComment": "Nicht empfehlenswert"
+  },
+  {
+    "id": "78",
+    "name": "CHATEAU Baron Fillon Bordeaux Bio 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.7 / 5 (Vivino)",
+    "price": "€12.00",
+    "taste": "fruchtig (Bio)",
+    "userRating": 3,
+    "userComment": "Okay"
+  },
+  {
+    "id": "79",
+    "name": "Chateau La Pirouette Medoc 2019",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (Critic)",
+    "price": "~$22.00",
+    "taste": "strukturiert & würzig",
+    "userRating": 4,
+    "userComment": "Gut"
+  },
+  {
+    "id": "80",
+    "name": "Chateau Fernon Dumes Graves 2019",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (G&G)",
+    "price": "~$20.00",
+    "taste": "beerig & mineralisch",
+    "userRating": 4,
+    "userComment": "Gut am zweiten Tag"
+  },
+  {
+    "id": "81",
+    "name": "Baron de ley Reserva 2018",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "92/100 (JS)",
+    "price": "~$20.00",
+    "taste": "intensiv & barrique",
+    "userRating": 4,
+    "userComment": "Barrique, intensiv, gut!"
+  },
+  {
+    "id": "82",
+    "name": "Chateau De La Riviere Fronsac 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Falstaff)",
+    "price": "~$25.00",
+    "taste": "elegant & würzig",
+    "userRating": 1,
+    "userComment": "Sauer, nicht herausragend"
+  },
+  {
+    "id": "83",
+    "name": "Chateau La Sauvergade Bordeaux 2020",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.8 / 5 (Vivino)",
+    "price": "~$12.00",
+    "taste": "ausgewogen & beerig",
+    "userRating": 4,
+    "userComment": "Auch nicht gut"
+  },
+  {
+    "id": "84",
+    "name": "Domaine Pech Cabanel",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.9 / 5 (Vivino)",
+    "price": "~$15.00",
+    "taste": "fein & strukturiert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "85",
+    "name": "Château Relais de la Poste Bordeaux 2020",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Vinous)",
+    "price": "~$15.00",
+    "taste": "fruchtig & würzig",
+    "userRating": 3,
+    "userComment": "Säuerlich, aber nicht schlecht"
+  },
+  {
+    "id": "86",
+    "name": "Gebrüder Nitnaus Zweigelt Neusiedlersee",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Falstaff)",
+    "price": "€12.00",
+    "taste": "fruchtig & klassisch",
+    "userRating": 4,
+    "userComment": "Gut"
+  },
+  {
+    "id": "87",
+    "name": "Esterhazy Pinot Noir Burgendland",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (Critic)",
+    "price": "€15.00",
+    "taste": "elegant & beerig",
+    "userRating": 3,
+    "userComment": "Okay"
+  },
+  {
+    "id": "88",
+    "name": "Martinez Alesanco 2016",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (JS)",
+    "price": "~$25.00",
+    "taste": "intensiv & barrique",
+    "userRating": 4,
+    "userComment": "Barrique, intensiv, gut"
+  },
+  {
+    "id": "89",
+    "name": "Francis Coppola Claret 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (W-S)",
+    "price": "~$20.00",
+    "taste": "kräftig & beerig",
+    "userRating": 5,
+    "userComment": "Sehr gut"
+  },
+  {
+    "id": "90",
+    "name": "Grand Bourdieu Graves 2018",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "1* (Hachette)",
+    "price": "~$18.00",
+    "taste": "klassisch & beerig",
+    "userRating": 5,
+    "userComment": "Nicht Super"
+  },
+  {
+    "id": "91",
+    "name": "Fernandez de Pierola Crianza 2020",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (Critic)",
+    "price": "€15.00",
+    "taste": "beerig & holzig",
+    "userRating": 4,
+    "userComment": "Gut"
+  },
+  {
+    "id": "92",
+    "name": "Monastrell barrica Bodegas Los Frailes Edeka",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (Critic)",
+    "price": "€8.00",
+    "taste": "frisch & mediterran (Bio)",
+    "userRating": 2,
+    "userComment": "langweilig"
+  },
+  {
+    "id": "93",
+    "name": "Grange des Vignes Ardeche",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.5 / 5 (Vivino)",
+    "price": "€12.00",
+    "taste": "einfach & süffig",
+    "userRating": 3,
+    "userComment": "ok"
+  },
+  {
+    "id": "94",
+    "name": "Bernard Haas Pinot Noir Alsace 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.7 / 5 (Vivino)",
+    "price": "€25.00",
+    "taste": "leicht & säurebetont",
+    "userRating": 4,
+    "userComment": "leicht und gut"
+  },
+  {
+    "id": "95",
+    "name": "Château Boi Queyran Moulis 2018",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "87/100 (JS)",
+    "price": "~$20.00",
+    "taste": "strukturiert & würzig",
+    "userRating": 0,
+    "userComment": "nicht herausragend"
+  },
+  {
+    "id": "96",
+    "name": "Domains des Pasquiers 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (JS)",
+    "price": "€15.00",
+    "taste": "intensiv & fruchtig (Bio)",
+    "userRating": 3,
+    "userComment": "okay"
+  },
+  {
+    "id": "97",
+    "name": "MOULIN DE MALLET CHATEAU Bordeaux 2017",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "€12.00",
+    "taste": "fruchtig & weich",
+    "userRating": 3,
+    "userComment": "Ok"
+  },
+  {
+    "id": "98",
+    "name": "CHÂTEAU CROIX DU BREUIL 2022 Edeka",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€8.00",
+    "taste": "elegant & fruchtig",
+    "userRating": 3,
+    "userComment": "Ok"
+  },
+  {
+    "id": "99",
+    "name": "Osoti Crianza Rioja 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "4.0 / 5 (Vivino)",
+    "price": "€14.00",
+    "taste": "klassisch & würzig (Bio)",
+    "userRating": 0,
+    "userComment": "Barrique, aber nicht herausragend"
+  },
+  {
+    "id": "100",
+    "name": "CHÂTEAU LA BLANQUERIE Bordeaux 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "84/100 (W-S)",
+    "price": "€12.00",
+    "taste": "strukturiert (Bio)",
+    "userRating": 2,
+    "userComment": "Säuerlich, fad"
+  },
+  {
+    "id": "101",
+    "name": "BERNARD MOREAU BOURGOGNE PINOT NOIR 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Decanter)",
+    "price": "€25.00",
+    "taste": "beerig & frisch",
+    "userRating": 0,
+    "userComment": "Leicht, nicht sehr komplex, Recht teuer"
+  },
+  {
+    "id": "102",
+    "name": "Chateau Malvat 2018",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (WE)",
+    "price": "~$20.00",
+    "taste": "beerig & vanillig",
+    "userRating": 3,
+    "userComment": "Bisschen Vanille, ok"
+  },
+  {
+    "id": "103",
+    "name": "Heinrich Naturtalent 2020",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "87/100 (Critic)",
+    "price": "€18.00",
+    "taste": "säurebetont & natur",
+    "userRating": 4,
+    "userComment": "Spontanvergoren, typische Natur-Wein Säure, gut!"
+  },
+  {
+    "id": "104",
+    "name": "Dehesa Gago 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (JS)",
+    "price": "€12.00",
+    "taste": "intensiv & fruchtig",
+    "userRating": 4,
+    "userComment": "intensives Aroma, Geschmack gut, aber weniger intensiv"
+  },
+  {
+    "id": "105",
+    "name": "ALSACE GRAND CRU Schlossberg RIESLING BERNARD HAAS 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "4.9 / 5 (Winery)",
+    "price": "€20.00",
+    "taste": "mineralisch & fruchtig",
+    "userRating": 5,
+    "userComment": "Sehr guter Weißwein!"
+  },
+  {
+    "id": "106",
+    "name": "chateauneuf du pape 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "95+ (Critic)",
+    "price": "~$20-$60+",
+    "taste": "kräftig & komplex",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "107",
+    "name": "Kracher Zweigelt 2019",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "89/100 (JS)",
+    "price": "€18.00",
+    "taste": "beerig & schokoladig",
+    "userRating": 3,
+    "userComment": "Konventionell, Vanille, nicht schlecht"
+  },
+  {
+    "id": "108",
+    "name": "Rioja Otonal 2019",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "93/100 (WE)",
+    "price": "€15.00",
+    "taste": "fruchtig & klassisch",
+    "userRating": 3,
+    "userComment": "ok"
+  },
+  {
+    "id": "109",
+    "name": "Domina 2022 Seufert",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (Est.)",
+    "price": "€11.00",
+    "taste": "elegant & fein",
+    "userRating": 4,
+    "userComment": "Gut Maische + Spontanvergoren"
+  },
+  {
+    "id": "110",
+    "name": "Vitisberg 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "local favorite",
+    "price": "€9.00",
+    "taste": "ausgewogen",
+    "userRating": 4,
+    "userComment": "gut"
+  },
+  {
+    "id": "111",
+    "name": "Gruber Röschitz",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (WE)",
+    "price": "€15.00",
+    "taste": "frisch & pfeffrig",
+    "userRating": 4,
+    "userComment": "relativ preiswert gut trinkbar dezente Säure wenig Tiefe"
+  },
+  {
+    "id": "112",
+    "name": "Heinrich Blaufränkisch",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (JS)",
+    "price": "€18.00",
+    "taste": "fruchtig (Bio)",
+    "userRating": 3,
+    "userComment": "ok, aber kein Kaufempfehlung"
+  },
+  {
+    "id": "113",
+    "name": "Schnabl Blauer",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91/100 (Falstaff)",
+    "price": "€8.00",
+    "taste": "Portugieser süffig",
+    "userRating": 0,
+    "userComment": "Portugieser süffig, relativ preiswert"
+  },
+  {
+    "id": "114",
+    "name": "Hagen Zweigelt 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "88/100 (WE)",
+    "price": "€15.00",
+    "taste": "beerig & frisch",
+    "userRating": 0,
+    "userComment": "aufdringliches Vanille Aroma. Geschmackssache!"
+  },
+  {
+    "id": "115",
+    "name": "Castello die Torre in Pietra 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "€12.00",
+    "taste": "fruchtig & süffig",
+    "userRating": 0,
+    "userComment": "süffig preiswert"
+  },
+  {
+    "id": "116",
+    "name": "Teroldego Rotaliano gaierhof",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "€14.00",
+    "taste": "beerig & erdig",
+    "userRating": 0,
+    "userComment": "süffig"
+  },
+  {
+    "id": "117",
+    "name": "Chapelle Saint Pierre 23",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "€11.00",
+    "taste": "kräftig & fruchtig (Bio)",
+    "userRating": 4,
+    "userComment": "kräftig und schmackhaft"
+  },
+  {
+    "id": "118",
+    "name": "Domaine des Carabiniers",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90/100 (Critic)",
+    "price": "€18.00",
+    "taste": "fruchtig (Bio)",
+    "userRating": 0,
+    "userComment": "leicht unangenehm marmeladig"
+  },
+  {
+    "id": "119",
+    "name": "Weber Welschriesling 2024 Bio",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "local favorite",
+    "price": "€10.00",
+    "taste": "fruchtig & spritzig",
+    "userRating": 0,
+    "userComment": "schön fruchtig süffig nicht zu süß"
+  },
+  {
+    "id": "120",
+    "name": "SCHMIDT WEINGUT 2023 SOUVIGNIER GRIS Bio",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "92+ (Falstaff)",
+    "price": "€10.00",
+    "taste": "vanillig & schlicht",
+    "userRating": 0,
+    "userComment": "Vanillenote, sonst recht schlicht"
+  },
+  {
+    "id": "121",
+    "name": "Bio Weingut Sonnenhügel Blauer Portugieser 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "local favorite",
+    "price": "€10.00",
+    "taste": "harmonisch & leicht",
+    "userRating": 4,
+    "userComment": "Leichter Maischegeschmack. Harmonisch, rund"
+  },
+  {
+    "id": "122",
+    "name": "2023 Zweigelt Schrattenthal ZULL",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90 (Falstaff)",
+    "price": "€12.00",
+    "taste": "beerig & würzig",
+    "userRating": 4,
+    "userComment": "Harmonisch, feine Würze, Charakter, leicht Barriquik, brendan sagt a bissl flach :)"
+  },
+  {
+    "id": "123",
+    "name": "Dolde 2022 Roter Jura",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "92+ (Falstaff)",
+    "price": "€12.00",
+    "taste": "elegant & beerig",
+    "userRating": 0,
+    "userComment": "Leicht säuerlich, bei Zimmertemperatur Eindruck leichter Fehlnote"
+  },
+  {
+    "id": "124",
+    "name": "Dolde 2023 Weißburgunder Brauner Jura",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "92+ (Falstaff)",
+    "price": "€12.00",
+    "taste": "fruchtig & kräftig",
+    "userRating": 0,
+    "userComment": "Süffig, aber nicht sehr aromatisch"
+  },
+  {
+    "id": "125",
+    "name": "SCHMIDT WEINGUT TAMINO KAISERSTUHL BADEN 2019",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.8 / 5 (Vivino)",
+    "price": "€10.00",
+    "taste": "würzig & beerig (Bio)",
+    "userRating": 3,
+    "userComment": "Nicht schlecht"
+  },
+  {
+    "id": "126",
+    "name": "RAÚLPÉREZ LA POULOSA LOMAS DE VALTUILLE 2021",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "95/100 (Lobb.)",
+    "price": "€20.00",
+    "taste": "beerig & komplex",
+    "userRating": 0,
+    "userComment": "Für den Preis 19,92 € / Bewertung (Lobenberg: 95/100 Parker: 93/100 Wine Spectator: 93/100) relativ unspektakulär"
+  },
+  {
+    "id": "127",
+    "name": "Piwi KollektivSouvignier Gris 2024 Piwi Bio",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90+ (Falstaff)",
+    "price": "€9.00",
+    "taste": "frisch & fruchtig",
+    "userRating": 3,
+    "userComment": "Leichte Frucht und Säure, süffig, preiswert, ok"
+  },
+  {
+    "id": "128",
+    "name": "ERNST Grüner Veltliner 2023 DEUTSCHKREUTZ ÖSTERREICH",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "€8.00",
+    "taste": "fruchtig & süffig",
+    "userRating": 0,
+    "userComment": "Trocken, wenig Frucht, nicht besonders aromatisch, süffig"
+  },
+  {
+    "id": "129",
+    "name": "Geo Blauer Portugieser 2024",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "local favorite",
+    "price": "€7.50",
+    "taste": "harmonisch & intensiv",
+    "userRating": 4,
+    "userComment": "Harmonisch, intensiv, preiswert, gut"
+  },
+  {
+    "id": "130",
+    "name": "Pröglhöf 1771 ANOMIA",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.6 / 5 (Vivino)",
+    "price": "€14.50",
+    "taste": "harmonisch & fruchtig",
+    "userRating": 4,
+    "userComment": "Harmonisch, vielschichtig mit leichtem Barrique"
+  },
+  {
+    "id": "131",
+    "name": "REFOSCO P. R. Terra musa by Musaragno",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.2 / 5 (Vivino)",
+    "price": "€9.50",
+    "taste": "fruchtig (Bio)",
+    "userRating": 2,
+    "userComment": "Nase unauffällig, leicht säuerlich und flach"
+  },
+  {
+    "id": "132",
+    "name": "Fink Cuvée Heideboden 2020 HEIDEBODEN BURGENLAND",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "organic",
+    "price": "€7.00",
+    "taste": "beerig & samtig",
+    "userRating": 0,
+    "userComment": "Leicht säuerlich, recht flach"
+  },
+  {
+    "id": "133",
+    "name": "Fink Zweigelt Reserve 2017",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90 (Falstaff)",
+    "price": "€13.00",
+    "taste": "beerig & schokoladig",
+    "userRating": 0,
+    "userComment": "Leicht marmeladig, etwas besser, aber auch nicht berauschend"
+  },
+  {
+    "id": "134",
+    "name": "Bergmann Zweigelt Exclusive 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "4.0 / 5 (Vivino)",
+    "price": "€8.50",
+    "taste": "fruchtig & samtig",
+    "userRating": 0,
+    "userComment": "Schwer zu beschreibende Note. Fehlnote, viel Tannin oder lange auf der Maische?"
+  },
+  {
+    "id": "135",
+    "name": "Zull Zweigelt Schrattenthal 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90 (Falstaff)",
+    "price": "€12.00",
+    "taste": "harmonisch",
+    "userRating": 4,
+    "userComment": "Gut trinkbar, harmonisch, aber unauffällig"
+  },
+  {
+    "id": "136",
+    "name": "Hahn Blauer Zweigelt 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "91 (Falstaff)",
+    "price": "€9.00",
+    "taste": "beerig & weich",
+    "userRating": 2,
+    "userComment": "Unauffällig"
+  },
+  {
+    "id": "137",
+    "name": "FROTZLER PINOT NOIR Ried Steinbreiten 2022",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "Gold (NÖ)",
+    "price": "€9.50",
+    "taste": "samtig & weich",
+    "userRating": 2,
+    "userComment": "Süffig, angenehme Nase, wenig komplex, leichte Säure"
+  },
+  {
+    "id": "138",
+    "name": "HEBENSTREIT PINOT NOIR Ried Breiteln",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.8 / 5 (Vivino)",
+    "price": "€15.50",
+    "taste": "strukturiert",
+    "userRating": 0,
+    "userComment": ""
+  },
+  {
+    "id": "139",
+    "name": "WEINGUT SONNENHÜGEL BALDUR [SOHN DER SONNE] 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "Gold (NÖ)",
+    "price": "€14.00",
+    "taste": "holzig & vanillig",
+    "userRating": 0,
+    "userComment": "Deutlich Holz und bisschen Vanille, aber nicht deutlich besser als der billigere Portugieser"
+  },
+  {
+    "id": "140",
+    "name": "VILLA DES CROIX Pinot Noir Pays d'Oc 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.9 / 5 (Vivino)",
+    "price": "€10.00",
+    "taste": "fruchtig & harmonisch",
+    "userRating": 4,
+    "userComment": "Preiswert. Fruchtige Nase. Harmonische Säure. Guter Alltagswein"
+  },
+  {
+    "id": "141",
+    "name": "Heinrich St. Laurent Rosen 2017",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "92 (Falstaff)",
+    "price": "€20.00",
+    "taste": "elegant & säuerlich",
+    "userRating": 1,
+    "userComment": "Recht säuerlich und eigentlich enttäuschend"
+  },
+  {
+    "id": "142",
+    "name": "ARKADENHOF HAUSDORF BLAUER ZWEIGELT WAGRAM 2018",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "3.8 (Vivino)",
+    "price": "€10.00",
+    "taste": "fruchtig & würzig",
+    "userRating": 5,
+    "userComment": "Guter Supermarktwein um 10€"
+  },
+  {
+    "id": "143",
+    "name": "CHATEAU DE CARAGUILHES 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "94/100 (RVF)",
+    "price": "€15.00",
+    "taste": "beerig & kräftig",
+    "userRating": 3,
+    "userComment": "Nicht schlecht, aber Recht teuer"
+  },
+  {
+    "id": "144",
+    "name": "Adobe Reserva Carmenere 2023",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "90 (JS)",
+    "price": "€13.00",
+    "taste": "ausgewogen & beerig",
+    "userRating": 4,
+    "userComment": "Ausgewogen und gut"
+  },
+  {
+    "id": "145",
+    "name": "Ernst BIO Zweigelt 2021",
+    "drinkingWindow": "",
+    "rating": "",
+    "price": "9",
+    "taste": "",
+    "userRating": 0,
+    "userComment": "Sehr guter, presiwerter Alltagswein"
+  }
+]

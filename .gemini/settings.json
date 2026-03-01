@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "name": "sync-wine-data",
+            "type": "command",
+            "command": "node \"C:\\Users\\Brend\\Weinlager\\sync_weine.js\"",
+            "description": "Synchronisiert Wein-Daten aus JSON in TXT und Excel beim Start."
+          }
+        ]
+      }
+    ]
+  }
+}
