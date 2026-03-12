@@ -71,11 +71,15 @@ function App() {
         body: JSON.stringify(exportData),
       });
 
-      if (!response.ok) throw new Error();
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.details || errorData.error || 'Serverfehler');
+      }
+      
       alert('Alle Daten wurden in mein_weinlager_export.json gespeichert.');
-    } catch (err) {
+    } catch (err: any) {
       console.error('Export-Fehler:', err);
-      alert('Fehler beim Exportieren. Läuft der Sync-Server?');
+      alert(`Fehler beim Exportieren: ${err.message}. Läuft der Sync-Server?`);
     }
   };
 
