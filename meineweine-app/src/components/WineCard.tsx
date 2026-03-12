@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wine, Calendar, CreditCard, Droplets, MessageSquare, CloudUpload } from 'lucide-react';
+import { Wine, Calendar, CreditCard, Droplets, MessageSquare, CloudUpload, Plus, Minus } from 'lucide-react';
 import { Rating } from './Rating';
 
 export interface WineData {
@@ -21,14 +21,17 @@ export interface UserWineData {
 interface WineCardProps {
   wine: WineData;
   userData?: UserWineData;
+  inventory: number;
   onUpdate: (id: string, data: Partial<UserWineData>) => void;
+  onInventoryChange: (id: string, quantity: number) => void;
   onSync?: (wine: WineData) => void;
 }
 
-export function WineCard({ wine, userData, onUpdate, onSync }: WineCardProps) {
+export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChange, onSync }: WineCardProps) {
   const currentRating = userData?.rating !== undefined ? userData.rating : (wine.userRating || 0);
   const currentComment = userData?.comment !== undefined ? userData.comment : (wine.userComment || '');
   const isCustom = wine.id.startsWith('custom-');
+  const isInStock = inventory > 0;
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-shadow relative">
@@ -57,7 +60,7 @@ export function WineCard({ wine, userData, onUpdate, onSync }: WineCardProps) {
           </span>
         </div>
 
-        <div className="grid grid-cols-2 gap-y-3 gap-x-4 mb-6 text-sm text-stone-600">
+        <div className="grid grid-cols-2 gap-y-3 gap-x-4 mb-4 text-sm text-stone-600">
           <div className="flex items-center gap-2">
             <Calendar size={16} className="text-stone-400" />
             <span>{wine.drinkingWindow}</span>
@@ -69,6 +72,34 @@ export function WineCard({ wine, userData, onUpdate, onSync }: WineCardProps) {
           <div className="flex items-center gap-2 col-span-2">
             <Droplets size={16} className="text-stone-400" />
             <span className="italic">{wine.taste}</span>
+          </div>
+        </div>
+
+        {/* Inventory Section */}
+        <div className={`mb-4 p-3 rounded-lg border ${isInStock ? 'bg-green-50 border-green-200' : 'bg-stone-100 border-stone-200'}`}>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Wine size={16} className={isInStock ? 'text-green-600' : 'text-stone-400'} />
+              <span className={`text-sm font-medium ${isInStock ? 'text-green-700' : 'text-stone-500'}`}>
+                {isInStock ? 'Vorrätig' : 'Nicht vorrätig'}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => onInventoryChange(wine.id, Math.max(0, inventory - 1))}
+                className="p-1.5 rounded-md bg-white border border-stone-200 hover:bg-stone-50 transition-colors disabled:opacity-50"
+                disabled={inventory === 0}
+              >
+                <Minus size={14} className="text-stone-600" />
+              </button>
+              <span className="w-8 text-center font-semibold text-stone-800">{inventory}</span>
+              <button
+                onClick={() => onInventoryChange(wine.id, inventory + 1)}
+                className="p-1.5 rounded-md bg-white border border-stone-200 hover:bg-stone-50 transition-colors"
+              >
+                <Plus size={14} className="text-stone-600" />
+              </button>
+            </div>
           </div>
         </div>
 

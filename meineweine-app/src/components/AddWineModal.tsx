@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { X, Plus, Wine, Calendar, CreditCard, Droplets, Star, MessageSquare } from 'lucide-react';
+import { X, Plus, Wine, Calendar, CreditCard, Droplets, Star, MessageSquare, Package } from 'lucide-react';
 import { WineData } from './WineCard';
 import { Rating } from './Rating';
 
 interface AddWineModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onAdd: (wine: WineData) => void;
+  onAdd: (wine: WineData, initialQuantity: number) => void;
 }
 
 export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
@@ -17,7 +17,8 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
     price: '',
     taste: '',
     userRating: 0,
-    userComment: ''
+    userComment: '',
+    quantity: 1
   });
 
   if (!isOpen) return null;
@@ -26,12 +27,13 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
     e.preventDefault();
     if (!formData.name) return;
 
+    const { quantity, ...wineFields } = formData;
     const newWine: WineData = {
       id: `custom-${Date.now()}`,
-      ...formData
+      ...wineFields
     };
 
-    onAdd(newWine);
+    onAdd(newWine, quantity);
     setFormData({
       name: '',
       drinkingWindow: '',
@@ -39,7 +41,8 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
       price: '',
       taste: '',
       userRating: 0,
-      userComment: ''
+      userComment: '',
+      quantity: 1
     });
     onClose();
   };
@@ -129,6 +132,20 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
                 onChange={e => setFormData(prev => ({ ...prev, taste: e.target.value }))}
               />
             </div>
+          </div>
+
+          <div className="space-y-1.5">
+            <label className="text-sm font-semibold text-stone-700 flex items-center gap-2">
+              <Package size={14} className="text-stone-400" /> Anzahl Flaschen
+            </label>
+            <input
+              type="number"
+              min="0"
+              placeholder="1"
+              className="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-xl focus:ring-2 focus:ring-wine-500/20 focus:border-wine-500 outline-none transition-all"
+              value={formData.quantity}
+              onChange={e => setFormData(prev => ({ ...prev, quantity: Math.max(0, parseInt(e.target.value) || 0) }))}
+            />
           </div>
 
           <div className="space-y-3 p-4 bg-wine-50/50 rounded-2xl border border-wine-100">

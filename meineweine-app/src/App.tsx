@@ -14,6 +14,7 @@ function App() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [userRatings, setUserRatings] = useLocalStorage<Record<string, UserWineData>>('weinlager-user-data', {});
   const [customWines, setCustomWines] = useLocalStorage<WineData[]>('weinlager-custom-wines', []);
+  const [inventory, setInventory] = useLocalStorage<Record<string, number>>('weinlager-inventory', {});
 
   const allWines = useMemo(() => {
     // Filter out custom wines that have been synced and are now in winesData
@@ -32,9 +33,22 @@ function App() {
     }));
   };
 
-  const handleAddWine = async (newWine: WineData) => {
+  const handleInventoryChange = (id: string, quantity: number) => {
+    setInventory((prev) => ({
+      ...prev,
+      [id]: quantity,
+    }));
+  };
+
+  const handleAddWine = async (newWine: WineData, initialQuantity: number = 1) => {
     // 1. Update local state immediately
     setCustomWines((prev) => [...prev, newWine]);
+
+    // Set initial inventory
+    setInventory((prev) => ({
+      ...prev,
+      [newWine.id]: initialQuantity,
+    }));
 
     // 2. Sync to the master TXT file via our backend server
     try {
@@ -152,14 +166,16 @@ function App() {
     const rated = Object.values(userRatings).filter(u => u.rating > 0);
     const avg = rated.length > 0 ? rated.reduce((acc, curr) => acc + curr.rating, 0) / rated.length : 0;
     const readyCount = allWines.filter(w => isReadyToDrink(w.drinkingWindow)).length;
-    
+    const inStockCount = allWines.filter(w => (inventory[w.id] || 0) > 0).length;
+
     return {
       count: allWines.length,
       rated: rated.length,
       avg: avg.toFixed(1),
-      ready: readyCount
+      ready: readyCount,
+      inStock: inStockCount
     };
-  }, [allWines, userRatings]);
+  }, [allWines, userRatings, inventory]);
 
   return (
     <div className="min-h-screen flex bg-stone-50">
@@ -247,6 +263,10 @@ function App() {
               <div className="text-2xl font-bold text-stone-800">{stats.count}</div>
             </div>
             <div className="text-right hidden sm:block">
+              <div className="text-sm font-medium text-green-600">Vorrätig</div>
+              <div className="text-2xl font-bold text-green-600">{stats.inStock}</div>
+            </div>
+            <div className="text-right hidden sm:block">
               <div className="text-sm font-medium text-stone-500">Jetzt trinken</div>
               <div className="text-2xl font-bold text-stone-800">{stats.ready}</div>
             </div>
@@ -293,7 +313,9 @@ function App() {
                   key={wine.id}
                   wine={wine}
                   userData={userRatings[wine.id]}
+                  inventory={inventory[wine.id] || 0}
                   onUpdate={handleUpdate}
+                  onInventoryChange={handleInventoryChange}
                   onSync={handleSyncToTxt}
                 />
               ))}
