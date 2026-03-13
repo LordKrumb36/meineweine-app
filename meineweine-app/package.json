@@ -11,7 +11,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/LordKrumb36/meineweine-app.git"
+    "deploy": "gh-pages -d dist --repo https://github.com/LordKrumb36/meineweine-app.git",
+    "publish": "npm run deploy && cd .. && git add -A && git commit -m \"chore: deploy latest version\" && git push origin main"
   },
   "keywords": [],
   "author": "",
