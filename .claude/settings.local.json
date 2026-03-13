@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /d/Brend/CLI/weinlager/meineweine-app && npm install --save-dev gh-pages 2>&1 | tail -3)",
+      "Bash(git config:*)",
+      "Bash(pkill -f \"node\" 2>/dev/null; pkill -f \"vite\" 2>/dev/null; echo \"done\")",
+      "Bash(cd /d/Brend/CLI/weinlager/meineweine-app && npm run dev:all 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npm run dev)",
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npm run deploy 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager && node -e \"const w = require\\('./meineweine-app/src/data/wines.json'\\); const countries = [...new Set\\(w.map\\(x => x.country\\).filter\\(Boolean\\)\\)].sort\\(\\); console.log\\(countries\\);\")",
+      "Bash(cd D:/Brend/CLI/Weinlager && node -e \"const w = require\\('./meineweine-app/src/data/wines.json'\\); console.log\\(JSON.stringify\\(w[0], null, 2\\)\\);\")",
+      "Bash(cd D:/Brend/CLI/Weinlager && node -e \"const w = require\\('./meineweine-app/src/data/wines.json'\\); const codes = [...new Set\\(w.map\\(x => { const m = x.name.match\\(/\\\\\\(\\([A-Z]{2,3}\\)\\\\\\)/\\); return m ? m[1] : 'Unbekannt'; }\\)\\)].sort\\(\\); console.log\\(codes\\);\")",
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npx tsc --noEmit 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npm run publish 2>&1)"
+    ]
+  }
+}

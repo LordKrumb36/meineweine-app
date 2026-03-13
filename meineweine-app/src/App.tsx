@@ -8,9 +8,25 @@ import { isReadyToDrink, exportData } from './utils/wineUtils';
 
 type FilterType = 'all' | 'ready' | 'inStock';
 
+const COUNTRY_NAMES: Record<string, string> = {
+  AR: 'Argentinien',
+  AT: 'Österreich',
+  DE: 'Deutschland',
+  ES: 'Spanien',
+  FR: 'Frankreich',
+  IT: 'Italien',
+  PT: 'Portugal',
+};
+
+function getCountryCode(name: string): string {
+  const match = name.match(/\(([A-Z]{2,3})\)$/);
+  return match ? match[1] : '';
+}
+
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+  const [selectedCountry, setSelectedCountry] = useState('');
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [userRatings, setUserRatings] = useLocalStorage<Record<string, UserWineData>>('weinlager-user-data', {});
   const [customWines, setCustomWines] = useLocalStorage<WineData[]>('weinlager-custom-wines', []);
@@ -150,19 +166,26 @@ function App() {
     }
   };
 
+  const availableCountries = useMemo(() => {
+    const codes = [...new Set(allWines.map(w => getCountryCode(w.name)).filter(Boolean))].sort();
+    return codes;
+  }, [allWines]);
+
   const filteredWines = useMemo(() => {
     return allWines.filter((wine) => {
-      const matchesSearch = 
+      const matchesSearch =
         wine.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         wine.taste.toLowerCase().includes(searchTerm.toLowerCase());
-      
+
       const matchesFilter = activeFilter === 'all' ||
         (activeFilter === 'ready' && isReadyToDrink(wine.drinkingWindow)) ||
         (activeFilter === 'inStock' && (inventory[wine.id] || 0) > 0);
 
-      return matchesSearch && matchesFilter;
+      const matchesCountry = !selectedCountry || getCountryCode(wine.name) === selectedCountry;
+
+      return matchesSearch && matchesFilter && matchesCountry;
     });
-  }, [allWines, searchTerm, activeFilter]);
+  }, [allWines, searchTerm, activeFilter, selectedCountry, inventory]);
 
   const stats = useMemo(() => {
     const rated = Object.values(userRatings).filter(u => u.rating > 0);
@@ -300,8 +323,8 @@ function App() {
                 </p>
               </div>
               
-              <div className="flex gap-2">
-                <button 
+              <div className="flex gap-2 flex-wrap">
+                <button
                   onClick={() => setActiveFilter('all')}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${activeFilter === 'all' ? 'bg-stone-800 text-white' : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-50'}`}
                 >
@@ -319,6 +342,18 @@ function App() {
                 >
                   Vorrätig
                 </button>
+                <select
+                  value={selectedCountry}
+                  onChange={(e) => setSelectedCountry(e.target.value)}
+                  className="px-4 py-2 rounded-lg text-sm font-medium bg-white text-stone-600 border border-stone-200 hover:bg-stone-50 cursor-pointer outline-none"
+                >
+                  <option value="">Alle Länder</option>
+                  {availableCountries.map(code => (
+                    <option key={code} value={code}>
+                      {COUNTRY_NAMES[code] || code}
+                    </option>
+                  ))}
+                </select>
               </div>
             </div>
 
@@ -347,6 +382,8 @@ function App() {
                     ? 'Es scheinen momentan keine Weine zum sofortigen Genuss bereit zu sein.'
                     : activeFilter === 'inStock'
                     ? 'Es sind momentan keine Weine auf Lager.'
+                    : selectedCountry
+                    ? `Keine Weine aus ${COUNTRY_NAMES[selectedCountry] || selectedCountry} gefunden.`
                     : 'Probiere es mit einem anderen Suchbegriff oder füge einen neuen Wein hinzu.'}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
