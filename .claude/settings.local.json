@@ -11,7 +11,12 @@
       "Bash(cd D:/Brend/CLI/Weinlager && node -e \"const w = require\\('./meineweine-app/src/data/wines.json'\\); console.log\\(JSON.stringify\\(w[0], null, 2\\)\\);\")",
       "Bash(cd D:/Brend/CLI/Weinlager && node -e \"const w = require\\('./meineweine-app/src/data/wines.json'\\); const codes = [...new Set\\(w.map\\(x => { const m = x.name.match\\(/\\\\\\(\\([A-Z]{2,3}\\)\\\\\\)/\\); return m ? m[1] : 'Unbekannt'; }\\)\\)].sort\\(\\); console.log\\(codes\\);\")",
       "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npx tsc --noEmit 2>&1)",
-      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npm run publish 2>&1)"
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npm run publish 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager && npx vercel --version 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npx vercel --prod 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npx vercel --prod --yes 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager && npx vercel --prod --yes 2>&1)",
+      "Bash(cd D:/Brend/CLI/Weinlager && npx vercel --prod --yes --cwd meineweine-app 2>&1)"
     ]
   }
 }
