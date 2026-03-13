@@ -6,7 +6,7 @@ import { AddWineModal } from './components/AddWineModal';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { isReadyToDrink, exportData } from './utils/wineUtils';
 
-type FilterType = 'all' | 'ready';
+type FilterType = 'all' | 'ready' | 'inStock';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -156,7 +156,9 @@ function App() {
         wine.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         wine.taste.toLowerCase().includes(searchTerm.toLowerCase());
       
-      const matchesFilter = activeFilter === 'all' || isReadyToDrink(wine.drinkingWindow);
+      const matchesFilter = activeFilter === 'all' ||
+        (activeFilter === 'ready' && isReadyToDrink(wine.drinkingWindow)) ||
+        (activeFilter === 'inStock' && (inventory[wine.id] || 0) > 0);
 
       return matchesSearch && matchesFilter;
     });
@@ -203,12 +205,19 @@ function App() {
               <LayoutDashboard size={20} />
               Übersicht
             </button>
-            <button 
+            <button
               onClick={() => setActiveFilter('ready')}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-colors ${activeFilter === 'ready' ? 'bg-white/10 text-white' : 'text-white/70 hover:bg-white/5 hover:text-white'}`}
             >
               <Clock size={20} />
               Jetzt trinken
+            </button>
+            <button
+              onClick={() => setActiveFilter('inStock')}
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-colors ${activeFilter === 'inStock' ? 'bg-white/10 text-white' : 'text-white/70 hover:bg-white/5 hover:text-white'}`}
+            >
+              <CheckCircle size={20} />
+              Vorrätig
             </button>
             <div className="py-2 border-t border-white/10 my-2" />
             <button 
@@ -284,7 +293,7 @@ function App() {
             <div className="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
               <div>
                 <h2 className="text-2xl font-serif font-bold text-stone-900">
-                  {activeFilter === 'all' ? 'Alle Weine' : 'Jetzt trinken'}
+                  {activeFilter === 'all' ? 'Alle Weine' : activeFilter === 'ready' ? 'Jetzt trinken' : 'Vorrätig'}
                 </h2>
                 <p className="text-stone-500 mt-1">
                   {filteredWines.length} {filteredWines.length === 1 ? 'Wein' : 'Weine'} gefunden
@@ -298,11 +307,17 @@ function App() {
                 >
                   Alle anzeigen
                 </button>
-                <button 
+                <button
                   onClick={() => setActiveFilter('ready')}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${activeFilter === 'ready' ? 'bg-wine-600 text-white' : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-50'}`}
                 >
                   Jetzt trinken
+                </button>
+                <button
+                  onClick={() => setActiveFilter('inStock')}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${activeFilter === 'inStock' ? 'bg-green-600 text-white' : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-50'}`}
+                >
+                  Vorrätig
                 </button>
               </div>
             </div>
@@ -328,13 +343,15 @@ function App() {
                 </div>
                 <h3 className="text-lg font-medium text-stone-900">Keine Weine gefunden</h3>
                 <p className="text-stone-500 mt-2 mb-6">
-                  {activeFilter === 'ready' 
-                    ? 'Es scheinen momentan keine Weine zum sofortigen Genuss bereit zu sein.' 
+                  {activeFilter === 'ready'
+                    ? 'Es scheinen momentan keine Weine zum sofortigen Genuss bereit zu sein.'
+                    : activeFilter === 'inStock'
+                    ? 'Es sind momentan keine Weine auf Lager.'
                     : 'Probiere es mit einem anderen Suchbegriff oder füge einen neuen Wein hinzu.'}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  {activeFilter === 'ready' ? (
-                    <button 
+                  {activeFilter === 'ready' || activeFilter === 'inStock' ? (
+                    <button
                       onClick={() => setActiveFilter('all')}
                       className="px-6 py-2 bg-stone-800 text-white rounded-xl font-semibold hover:bg-stone-900 transition-colors"
                     >
