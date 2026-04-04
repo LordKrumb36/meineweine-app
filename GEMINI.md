@@ -20,7 +20,12 @@
 
 ## Technische Neuerungen (04.04.2026)
 - **Dynamische Pfade:** Alle Skripte nutzen nun `__dirname`, was die App zwischen verschiedenen Verzeichnissen portabel macht.
-- **Data Enrichment:** Neue Weine aus der PDF werden automatisch mit Preis und Geschmacksprofilen (via Websuche) angereichert. Deine Anmerkungen werden sauber in die Kommentarspalte verschoben.
+- **Data Enrichment & Fachbewertungen:** Neue Weine werden automatisch mit Preis und Geschmacksprofilen angereichert. Bewertungen werden nach folgender Priorität recherchiert:
+  1. **Falstaff / Eichelmann / Vinum:** (0–100 Punkte) Standard für DE, AT, IT.
+  2. **Robert Parker / James Suckling:** Internationaler Standard.
+  3. **Lobenberg / Mundus Vini:** Fundierte Händler- & Wettbewerbs-Scores.
+  4. **Vivino:** Nur als Ergänzung (Nutzer-Durchschnitt).
+  *(Est.) markiert fundierte Schätzungen basierend auf Vorjahrgängen oder Guide-Durchschnitten.*
 
 ## File Structure
 - `Weinlager_Details.txt`: Master-Liste (Markdown).

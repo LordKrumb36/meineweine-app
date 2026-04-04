@@ -49,18 +49,18 @@ Wine Details from gute-weine.de (Lobenbergs)
 
 *Estimated based on international retailers or similar products.
 
-| Häußermann Spätburgunder trocken (DE) | jetzt trinken | - | €8.00 | trocken | ★★★★ | Schöne Säure, aber nicht zu dominant. Gut! |
-| Häußermann Trollinger Urgestein trocken (DE) | jetzt trinken | - | €8.00 | trocken |  |  |
-| Häußermann Cabernet Dorsa trocken (DE) | jetzt trinken | - | €9.00 | trocken |  |  |
-| Häußermann Lemberger Premium trocken (DE) | 2026 – 2030 | - | €12.00 | trocken |  |  |
-| Häußermann Merlot Premium trocken (DE) | 2026 – 2030 | - | €12.00 | trocken |  |  |
-| Häußermann Spätburgunder Premium trocken (DE) | 2026 – 2030 | - | €12.00 | trocken |  |  |
-| Häußermann Hüsern 6 Cuvée rot Premium trocken (DE) | 2026 – 2030 | - | €12.00 | trocken |  |  |
-| Häußermann Lemberger Reserve trocken (DE) | 2026 – 2035 | - | €20.00 | trocken |  |  |
-| Häußermann Merlot Reserve trocken (DE) | 2026 – 2035 | - | €20.00 | trocken |  |  |
-| Häußermann Pinot Noir Reserve trocken (DE) | 2026 – 2035 | - | €22.00 | trocken |  |  |
-| Häußermann Großer Fuchs trocken (DE) | 2026 – 2035 | - | €20.00 | trocken |  |  |
-| Häußermann Rosé Saignée trocken (DE) | jetzt trinken | - | €8.00 | trocken |  |  |
+| Häußermann Spätburgunder trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | trocken | ★★★★ | Schöne Säure, aber nicht zu dominant. Gut! |
+| Häußermann Trollinger Urgestein trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | trocken |  |  |
+| Häußermann Cabernet Dorsa trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €9.00 | trocken |  |  |
+| Häußermann Lemberger Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
+| Häußermann Merlot Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
+| Häußermann Spätburgunder Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
+| Häußermann Hüsern 6 Cuvée rot Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
+| Häußermann Lemberger Reserve trocken (DE) | 2026 – 2035 | 88 (Eichelmann) | €20.00 | kraftvoll & Gewürznoten |  |  |
+| Häußermann Merlot Reserve trocken (DE) | 2026 – 2035 | Gold (EcoWinner) | €20.00 | frisch & kraftvoll |  |  |
+| Häußermann Pinot Noir Reserve trocken (DE) | 2026 – 2035 | 87 (Eichelmann) | €22.00 | feinduftig & gute Struktur |  |  |
+| Häußermann Großer Fuchs trocken (DE) | 2026 – 2035 | 85 (Eichelmann) | €20.00 | Lemberger-Merlot-Pinot Cuvée, füllig & würzig |  |  |
+| Häußermann Rosé Saignée trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | trocken |  |  |
 
 | Violante Nero di troia rivera 2017 | jetzt trinken | 3.5 / 5 (Vivino) | ~$12.00 | fruchtbetont |  |  |
 | Santa Lucia Cavalcina 2017 | jetzt trinken | 87/100 (Critic) | ~$10.00 | leicht & fruchtbetont |  |  |
@@ -103,7 +103,7 @@ Wine Details from gute-weine.de (Lobenbergs)
 | Château Boi Queyran Moulis 2018 | jetzt trinken | 87/100 (JS) | ~$20.00 | strukturiert & würzig |  |  |
 | Domains des Pasquiers 2022 | jetzt trinken | 91/100 (JS) | €15.00 | intensiv & fruchtig (Bio) |  |  |
 | MOULIN DE MALLET CHATEAU Bordeaux 2017 | jetzt trinken | 3.6 / 5 (Vivino) | €12.00 | fruchtig & weich |  |  |
-| CHÂTEAU CROIX DU BREUIL 2022 Edeka | jetzt trinken | - | €8.00 | elegant & fruchtig |  |  |
+| CHÂTEAU CROIX DU BREUIL 2022 Edeka | jetzt trinken | Gold (Mundus Vini) | €7.99 | Johannisbeere, Himbeere & geschmeidig |  |  |
 | Osoti Crianza Rioja 2021 | jetzt trinken | 4.0 / 5 (Vivino) | €14.00 | klassisch & würzig (Bio) |  |  |
 | CHÂTEAU LA BLANQUERIE Bordeaux 2021 | jetzt trinken | 84/100 (W-S) | €12.00 | strukturiert (Bio) |  |  |
 | BERNARD MOREAU BOURGOGNE PINOT NOIR 2021 | jetzt trinken | 90/100 (Decanter) | €25.00 | beerig & frisch |  |  |
@@ -150,8 +150,8 @@ Wine Details from gute-weine.de (Lobenbergs)
 | ARKADENHOF HAUSDORF BLAUER ZWEIGELT WAGRAM 2018 | jetzt trinken | 3.8 (Vivino) | €10.00 | fruchtig & würzig |  |  |
 | CHATEAU DE CARAGUILHES 2023 | jetzt trinken | 94/100 (RVF) | €15.00 | beerig & kräftig |  |  |
 | Adobe Reserva Carmenere 2023 | jetzt trinken | 90 (JS) | €13.00 | ausgewogen & beerig |  |  |
-| Ernst BIO Zweigelt 2021 |  |  | €9.00 |  |  |  |
-| Häußermann Spätburgunder Premium 2019 (DE) | jetzt trinken | - | €12.00 | samtig, dezent Vanille & Fruchtwucht |  | Schöne Säure, nicht zu dominant. Gut! |
+| Ernst BIO Zweigelt 2021 | jetzt trinken | 89/100 (Falstaff) | €8.90 | Sauerkirsche, Brombeere & samtiges Tannin |  |  |
+| Häußermann Spätburgunder Premium 2019 (DE) | jetzt trinken | 1.5* (Eichelmann) | €12.00 | samtig, dezent Vanille & Fruchtwucht |  | Schöne Säure, nicht zu dominant. Gut! |
 | Rieger Pinot Noir 2023 (DE) | jetzt trinken | 92/100 (Falstaff) | €10.00 | Pflaume, Sauerkirsche & Kräuterwürze |  | Leicht, bisschen säuerlich. kein Tip |
 | Riegel Erzeugermarken Sauvignon Blanc PARRA Familia (ES) | jetzt trinken | Silber (Mundus Vini) | €7.50 | Litschi, Stachelbeere & erfrischend |  | Angenehme Frucht, süffig. preiswert! |
 | Hoffmann Spätburgunder 2022 (DE) | jetzt trinken | 89/100 (Est.) | €10.00 | dunkle Beeren, feine Würze & vollmundig |  | Recht leicht, süffig. wenig Tiefe |
