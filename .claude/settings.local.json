@@ -16,7 +16,11 @@
       "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npx vercel --prod 2>&1)",
       "Bash(cd D:/Brend/CLI/Weinlager/meineweine-app && npx vercel --prod --yes 2>&1)",
       "Bash(cd D:/Brend/CLI/Weinlager && npx vercel --prod --yes 2>&1)",
-      "Bash(cd D:/Brend/CLI/Weinlager && npx vercel --prod --yes --cwd meineweine-app 2>&1)"
+      "Bash(cd D:/Brend/CLI/Weinlager && npx vercel --prod --yes --cwd meineweine-app 2>&1)",
+      "Bash(cd \"D:/Brend/CLI/Lizenzen\" && powershell -ExecutionPolicy Bypass -File read_royalties.ps1)",
+      "Bash(cd \"D:/Brend/CLI/Lizenzen\" && npm install 2>&1 | tail -5)",
+      "Bash(cd \"D:/Brend/CLI/Lizenzen\" && npm run extract 2>&1)",
+      "Bash(cd \"D:/Brend/CLI/Lizenzen\" && npm create vite@latest lizenzen-app -- --template react-ts 2>&1)"
     ]
   }
 }

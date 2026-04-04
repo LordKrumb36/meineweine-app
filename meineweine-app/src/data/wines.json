@@ -1444,9 +1444,49 @@
     "name": "Ernst BIO Zweigelt 2021",
     "drinkingWindow": "",
     "rating": "",
-    "price": "9",
+    "price": "€9.00",
     "taste": "",
     "userRating": 0,
     "userComment": ""
+  },
+  {
+    "id": "146",
+    "name": "Häußermann Spätburgunder Premium 2019 (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€12.00",
+    "taste": "samtig, dezent Vanille & Fruchtwucht",
+    "userRating": 0,
+    "userComment": "Schöne Säure, nicht zu dominant. Gut!"
+  },
+  {
+    "id": "147",
+    "name": "Rieger Pinot Noir 2023 (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€10.00",
+    "taste": "Pflaume, Sauerkirsche & Kräuterwürze",
+    "userRating": 0,
+    "userComment": "Leicht, bisschen säuerlich. kein Tip"
+  },
+  {
+    "id": "148",
+    "name": "Riegel Erzeugermarken Sauvignon Blanc PARRA Familia (ES)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€7.50",
+    "taste": "Litschi, Stachelbeere & erfrischend",
+    "userRating": 0,
+    "userComment": "Angenehme Frucht, süffig. preiswert!"
+  },
+  {
+    "id": "149",
+    "name": "Hoffmann Spätburgunder 2022 (DE)",
+    "drinkingWindow": "jetzt trinken",
+    "rating": "-",
+    "price": "€10.00",
+    "taste": "dunkle Beeren, feine Würze & vollmundig",
+    "userRating": 0,
+    "userComment": "Recht leicht, süffig. wenig Tiefe"
   }
 ]
