@@ -20,7 +20,7 @@
 
 ## Technische Neuerungen (04.04.2026)
 - **Dynamische Pfade:** Alle Skripte nutzen nun `__dirname`, was die App zwischen verschiedenen Verzeichnissen portabel macht.
-- **Data Enrichment & Fachbewertungen:** Neue Weine werden automatisch mit Preis und Geschmacksprofilen angereichert. Bewertungen werden nach folgender Priorität recherchiert:
+- **Data Enrichment & Fachbewertungen:** Neue Weine werden automatisch mit Preis und Geschmacksprofilen angereichert. Bestehende Lücken in der Datenbank werden aktiv nachrecherchiert. Bewertungen werden nach folgender Priorität recherchiert:
   1. **Falstaff / Eichelmann / Vinum:** (0–100 Punkte) Standard für DE, AT, IT.
   2. **Robert Parker / James Suckling:** Internationaler Standard.
   3. **Lobenberg / Mundus Vini:** Fundierte Händler- & Wettbewerbs-Scores.
