@@ -13,6 +13,36 @@ export function isReadyToDrink(drinkingWindow: string): boolean {
   return false;
 }
 
+export function parsePrice(priceStr: string): number {
+  if (!priceStr) return 0;
+  // Entferne Währungssymbole, Tildes, Sterne und andere nicht-numerische Zeichen außer . und ,
+  const cleaned = priceStr.replace(/[^\d,.-]/g, '').replace(',', '.');
+  const match = cleaned.match(/(\d+(\.\d+)?)/);
+  return match ? parseFloat(match[0]) : 0;
+}
+
+export function parseRating(ratingStr: string): number {
+  if (!ratingStr) return 0;
+  
+  // 100-Punkte-Skala: 91/100, 95+/100
+  const hundredMatch = ratingStr.match(/(\d+)\s*\/\s*100/);
+  if (hundredMatch) return parseInt(hundredMatch[1], 10);
+
+  // Vivino 5-Punkte-Skala: 3.5 / 5
+  const fiveMatch = ratingStr.match(/(\d+(\.\d+)?)\s*\/\s*5/);
+  if (fiveMatch) return parseFloat(fiveMatch[1]) * 20; // Normalisierung auf 100
+
+  // Eichelmann Sterne: 1.5*
+  const starMatch = ratingStr.match(/(\d+(\.\d+)?)\s*\*/);
+  if (starMatch) return parseFloat(starMatch[1]) * 20; // Normalisierung auf 100 (Annahme 5 Sterne max)
+
+  // Andere Zahlen: 88 (Eichelmann)
+  const numberMatch = ratingStr.match(/(\d+)/);
+  if (numberMatch) return parseInt(numberMatch[0], 10);
+
+  return 0;
+}
+
 export function exportData(wines: any[], userRatings: any) {
   const exportData = wines.map(wine => ({
     ...wine,

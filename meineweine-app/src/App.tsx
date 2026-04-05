@@ -1,12 +1,13 @@
 import React, { useState, useMemo } from 'react';
-import { Search, Wine, LayoutDashboard, Settings, LogOut, Filter, Download, CheckCircle, Clock, Upload, Plus } from 'lucide-react';
+import { Search, Wine, LayoutDashboard, Settings, LogOut, Filter, Download, CheckCircle, Clock, Upload, Plus, ArrowUpDown } from 'lucide-react';
 import winesData from './data/wines.json';
 import { WineCard, type UserWineData, type WineData } from './components/WineCard';
 import { AddWineModal } from './components/AddWineModal';
 import { useLocalStorage } from './hooks/useLocalStorage';
-import { isReadyToDrink, exportData } from './utils/wineUtils';
+import { isReadyToDrink, exportData, parsePrice, parseRating } from './utils/wineUtils';
 
 type FilterType = 'all' | 'ready' | 'inStock';
+type SortType = 'name' | 'price-asc' | 'price-desc' | 'rating-desc' | 'user-rating-desc';
 
 const COUNTRY_NAMES: Record<string, string> = {
   AR: 'Argentinien',
@@ -26,6 +27,7 @@ function getCountryCode(name: string): string {
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+  const [sortBy, setSortBy] = useState<SortType>('name');
   const [selectedCountry, setSelectedCountry] = useState('');
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [userRatings, setUserRatings] = useLocalStorage<Record<string, UserWineData>>('weinlager-user-data', {});
@@ -172,7 +174,7 @@ function App() {
   }, [allWines]);
 
   const filteredWines = useMemo(() => {
-    return allWines.filter((wine) => {
+    const filtered = allWines.filter((wine) => {
       const matchesSearch =
         wine.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         wine.taste.toLowerCase().includes(searchTerm.toLowerCase());
@@ -185,7 +187,24 @@ function App() {
 
       return matchesSearch && matchesFilter && matchesCountry;
     });
-  }, [allWines, searchTerm, activeFilter, selectedCountry, inventory]);
+
+    return [...filtered].sort((a, b) => {
+      switch (sortBy) {
+        case 'price-asc':
+          return parsePrice(a.price) - parsePrice(b.price);
+        case 'price-desc':
+          return parsePrice(b.price) - parsePrice(a.price);
+        case 'rating-desc':
+          return parseRating(b.rating) - parseRating(a.rating);
+        case 'user-rating-desc':
+          const ratingA = userRatings[a.id]?.rating ?? a.userRating ?? 0;
+          const ratingB = userRatings[b.id]?.rating ?? b.userRating ?? 0;
+          return ratingB - ratingA;
+        default:
+          return a.name.localeCompare(b.name);
+      }
+    });
+  }, [allWines, searchTerm, activeFilter, selectedCountry, inventory, sortBy, userRatings]);
 
   const stats = useMemo(() => {
     const rated = Object.values(userRatings).filter(u => u.rating > 0);
@@ -354,6 +373,21 @@ function App() {
                     </option>
                   ))}
                 </select>
+
+                <div className="flex items-center gap-2 bg-white border border-stone-200 rounded-lg px-3 py-2 hover:bg-stone-50 transition-colors">
+                  <ArrowUpDown size={16} className="text-stone-400" />
+                  <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value as SortType)}
+                    className="text-sm font-medium bg-transparent text-stone-600 cursor-pointer outline-none"
+                  >
+                    <option value="name">Name (A-Z)</option>
+                    <option value="price-asc">Preis (aufst.)</option>
+                    <option value="price-desc">Preis (abst.)</option>
+                    <option value="rating-desc">Fachbewertung</option>
+                    <option value="user-rating-desc">Eigene Bewertung</option>
+                  </select>
+                </div>
               </div>
             </div>
 

@@ -1,4 +1,4 @@
-# Weinlager App - Workflow Overview (Stand: 04. April 2026)
+# Weinlager App - Workflow Overview (Stand: 05. April 2026)
 
 ## Core Commands
 - **Start Development & Sync Servers:** 
@@ -18,13 +18,11 @@
    - **Weine.pdf:** Neue Einträge in der PDF werden beim Sync automatisch als neue Zeilen in `Weinlager_Details.txt` importiert.
    - **Bestellungen:** `bestellungen lobenberg.txt` wird auf Vollständigkeit geprüft.
 
-## Technische Neuerungen (04.04.2026)
-- **Dynamische Pfade:** Alle Skripte nutzen nun `__dirname`, was die App zwischen verschiedenen Verzeichnissen portabel macht.
-- **Data Enrichment & Fachbewertungen:** Neue Weine werden automatisch mit Preis und Geschmacksprofilen angereichert. Bestehende Lücken in der Datenbank werden aktiv nachrecherchiert. Bewertungen werden nach folgender Priorität recherchiert:
-  1. **Falstaff / Eichelmann / Vinum:** (0–100 Punkte) Standard für DE, AT, IT.
-  2. **Robert Parker / James Suckling:** Internationaler Standard.
-  3. **Lobenberg / Mundus Vini:** Fundierte Händler- & Wettbewerbs-Scores.
-  4. **Vivino:** Nur als Ergänzung (Nutzer-Durchschnitt).
+## Technische Neuerungen (05.04.2026)
+- **Erweiterte Sortierung:** Weine können nun im Frontend nach Preis (aufsteigend/absteigend), Fachbewertung (normalisierte 100-Punkte-Skala) und eigenem Urteil sortiert werden.
+- **Data Parsing & Normalisierung:** Preis- und Bewertungsstrings (z. B. "€11.90", "91/100", "1.5*") werden zur korrekten Sortierung automatisch in numerische Werte konvertiert.
+- **Dynamische Pfade (04.04.):** Alle Skripte nutzen nun `__dirname`, was die App zwischen verschiedenen Verzeichnissen portabel macht.
+- **Data Enrichment & Fachbewertungen (04.04.):** Neue Weine werden automatisch mit Preis und Geschmacksprofilen angereichert. Bewertungen werden nach Priorität (Falstaff, Parker, Lobenberg, Vivino) recherchiert.
   *(Est.) markiert fundierte Schätzungen basierend auf Vorjahrgängen oder Guide-Durchschnitten.*
 
 ## File Structure
