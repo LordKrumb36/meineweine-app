@@ -1,157 +1,153 @@
-Wine Details from gute-weine.de (Lobenbergs)
+# Weinlager Details (Backup aus Cloud vom 11.4.2026)
 
-| Wine | Trinkreife (Drinking Window) | Bewertung (Rating) | Preis (Price) | Geschmack (Taste Category) | Meine Bewertung | Kommentar |
+| Wine | Drinking Window | Expert Rating | Price | Inventory | User Rating | User Comment |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Weninger Kékfrankos Balf 2020 (AT) | 2023 – 2030 | 91/100 (Lobenberg) | €11.90 | fruchtbetont, seidig & aromatisch | ★★★★ | Leicht säuerlich. Naturweinnote. Harmonisch |
-| Venus La Universal Dido 2022 (ES) | 2024 – 2030+ | 93/100 (Parker) | €19.90 | pikant & würzig (fruchtbetont) |  |  |
-| Jorge Navascués Mancuso Garnacha 2021 (ES) | 2025 – 2038 | 95/100 (Lobenberg) | €18.50 | pikant & würzig strukturiert |  |  |
-| i Clivi Schioppettino 2023 (IT) | ab 2025 | 95/100 (Lobenberg) | ~$25.00* | elegant, mineralisch & feingliedrig |  |  |
-| Finca Feliz Tesoro Malbec 2025 (AR) | 2026 – 2034 | 95/100 (Lobenberg) | ~$15.00* | kraftvoll, würzig & konzentriert |  |  |
-| Weninger Ponzichter 2024 (AT) | 2025 – 2030 | 91/100 (Lobenberg) | €11.50 | fruchtbetont, seidig & aromatisch |  |  |
-| Le Pupille Morellino di Scansano Riserva 2022 (IT) | 2025 – 2035 | 94/100 (Suckling) | €21.90 | kraftvoll, würzig & konzentriert |  |  |
-| Vaglio Chango Cuvée 2019 (AR) | 2022 – 2034 | 95/100 (Lobenberg) | €17.50 | kraftvoll, würzig & konzentriert |  |  |
-| Agricole Vallone Castel Serranova 2019 (IT) | 2022 – 2030 | 95/100 (Lobenberg) | €13.50 | fruchtbetont, seidig & aromatisch |  |  |
-| Villa Saletta Chianti Superiore 2019 (IT) | 2022 – 2032 | 90-92/100 (Est.) | €15.50 | pikant & würzig (elegant) |  |  |
-| Bodegas y Vinedos Ponce Buena Pinta Moravia Agria 2024 (ES) | 2026 – 2042 | 95/100 (Lobenberg) | €11.90 | kraftvoll, würzig & konzentriert |  |  |
-| Le Sacre Janoueix Chateau Le Sacre St. Georges 2023 (FR) | ab 2026 | 95+/100 (Lobenberg) | €19.00 | elegant, mineralisch & feingliedrig |  |  |
-| Can Rafols dels Caus Terraprima Tinto 2022 (ES) | 2024 – 2030+ | 92/100 (Est.) | €13.80 | fruchtbetont, seidig & aromatisch |  |  |
-| Adega Algueira Patrimonio 2018 (ES) | jetzt trinken | 93/100 (Lobenberg) | €18.90 | elegant, mineralisch & feingliedrig |  |  |
-| Le Pupille Morellino di Scansano 2023 (IT) | 2024 – 2033 | 90/100 (Parker) | €11.90 | fruchtbetont, seidig & aromatisch |  |  |
-| Sainte Léocadie Cuvée Leukadios Rouge 2022 (FR) | 2024 – 2026 | 90/100 (Lobenberg) | €9.90 | fruchtbetont, seidig & aromatisch |  |  |
-| Sainte Léocadie Cuvee Les Clauses 2022 (FR) | 2024 – 2033 | 91-92/100 (Lobenberg) | €11.00 | kraftvoll, würzig & konzentriert |  |  |
-| Felsina Chianti Colli Senesi Farnetella 2022 (IT) | 2025 – 2031 | 92/100 (Lobenberg) | €11.90 | elegant, mineralisch & feingliedrig |  |  |
-| Knipser Cuvée Gaudenz trocken 2019 (DE) | jetzt trinken | 88/100 (Vivino) | ~€14.00* | fruchtbetont, seidig & aromatisch |  |  |
-| Roc de Levraut Grand Roc Bordeaux Superieur 2022 (FR) | jetzt trinken | 91/100 (Lobenberg) | €13.15 | kraftvoll, würzig & konzentriert |  |  |
-| Monte Antico Monte Antico 2021 (IT) | jetzt trinken | 91/100 (Suckling) | €16.00* | pikant & würzig (saftig) |  |  |
-| Weninger Ponzichter 2023 (AT) | jetzt trinken | 91/100 (Est.) | €12.00 | fruchtbetont, seidig & aromatisch |  |  |
-| Hanspeter Ziereisen Blauer Spätburgunder trocken 2022 (DE) | sofort | 94/100 (Falstaff) | €10.80 | elegant, mineralisch & feingliedrig |  |  |
-| Hanspeter Ziereisen Blauer Spätburgunder TS (ehemals Tschuppen) trocken 2022 (DE) | 2024 – 2032 | 91/100 (Wine Adv.) | €12.90 | elegant, mineralisch & feingliedrig |  |  |
-| Villa des Croix Pinot Noir 2023 (FR) | jetzt trinken | 89/100 (Lobenberg) | €9.95 | elegant, mineralisch & feingliedrig |  |  |
-| Alvaro Castro Dao Alvaro Castro 2021 (PT) | 2024 – 2030+ | 91/100 (Lobenberg) | €12.50 | elegant, mineralisch & feingliedrig |  |  |
-| Daumas Gassac / Aime Guibert Guilhem Rouge 2023 (FR) | 2025 – 2035 | 92/100 (Est.) | €8.95 | fruchtbetont, seidig & aromatisch |  |  |
-| Casa Castillo Casa Castillo Monastrell 2023 (ES) | jetzt trinken | 93/100 (Parker) | €11.00 | kraftvoll, würzig & konzentriert |  |  |
-| Knipser Blauer Spätburgunder Gutswein trocken 2020 (DE) | bis 2027 | 93/100 (Lobenberg) | €12.75 | elegant, mineralisch & feingliedrig | ★★★ | Nicht schlecht |
-| 4 Kilos Motor 2020 (ES) | jetzt trinken | 91/100 (Est.) | ~€22.50* | elegant, mineralisch & feingliedrig |  |  |
-| Alegre Valganon Garnacha Tinto 2019 (ES) | jetzt trinken | 93/100 (Lobenberg) | €17.00* | elegant, mineralisch & feingliedrig |  |  |
-| Alegre Valgañón Garnacha Tinto 2020 (ES) | jetzt trinken | 93/100 (Est.) | ~€20.00* | elegant, mineralisch & feingliedrig |  |  |
-| Raul Perez La Vizcaina La Poulosa Mencia 2021 (ES) | 2023 – 2028 | 95/100 (Lobenberg) | €22.00* | elegant, mineralisch & feingliedrig |  |  |
-| du Retout Chateau du Retout Cru Bourgeois Supérieur 2020 (FR) | 2026 – 2045 | 96+/100 (Lobenberg) | €18.50 | kraftvoll, würzig & konzentriert |  |  |
-| Heinrich Pinot Noir 2022 (AT) | jetzt trinken | 90/100 (Est.) | €12.50 | elegant, mineralisch & feingliedrig | ★★★★ | Typisches Maische Natur-Wein Aroma. Guter Wein! |
-| Remelluri – Telmo Rodriguez Lindes de Remelluri - Vinedos de Labastida 2020 (ES) | 2024 – 2042 | 93/100 (Est.) | €13.90 | fruchtbetont, seidig & aromatisch |  |  |
-| Castro Ventosa De La Familia Perez Valtuille Vino de Villa 2021 (ES) | jetzt trinken | 94/100 (Parker) | €27.00 | elegant, mineralisch & feingliedrig |  |  |
-| Heinrich Naked Rosé 2023 (AT) | 2024 – 2027 | 91/100 (Lobenberg) | €13.00 | fruchtbetont, seidig & aromatisch |  |  |
-| Artuke Artuke 2023 (ES) | jetzt trinken | 90/100 (Est.) | €10.90 | fruchtbetont, seidig & aromatisch | ★★★ | Okay, aber zu teuer |
-| G.D. Vajra Claré J.C. Langhe Nebbiolo 2023 (IT) | 2024 – 2036 | 94+/100 (Lobenberg) | €17.90 | fruchtbetont, seidig & aromatisch |  |  |
-| Gago Viticultores – Telmo Rodriguez Dehesa Gago Tinta de Toro 2023 (ES) | 2025 – 2031 | 90+/100 (Lobenberg) | €11.50 | kraftvoll, würzig & konzentriert |  |  |
-| Bodegas y Vinedos Ponce P.F 2023 (ES) | bis 2033+ | 96+/100 (Parker) | ~€19.00* | elegant, mineralisch & feingliedrig |  |  |
-| Kracher - Weinlaubenhof Zweigelt 2019 (AT) | 2023 – 2030 | 89/100 (Lobenberg) | €12.00* | fruchtbetont, seidig & aromatisch |  |  |
-| Bodegas y Vinedos Ponce Clos Lojen 2023 (ES) | jetzt trinken | 93/100 (Parker) | €10.60 | fruchtbetont, seidig & aromatisch |  |  |
-
-*Estimated based on international retailers or similar products.
-
-| Häußermann Spätburgunder trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | trocken | ★★★★ | Schöne Säure, aber nicht zu dominant. Gut! |
-| Häußermann Trollinger Urgestein trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | trocken |  |  |
-| Häußermann Cabernet Dorsa trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €9.00 | trocken |  |  |
-| Häußermann Lemberger Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
-| Häußermann Merlot Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
-| Häußermann Spätburgunder Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
-| Häußermann Hüsern 6 Cuvée rot Premium trocken (DE) | 2026 – 2030 | 1.5* (Eichelmann) | €12.00 | trocken |  |  |
-| Häußermann Lemberger Reserve trocken (DE) | 2026 – 2035 | 88 (Eichelmann) | €20.00 | kraftvoll & Gewürznoten |  |  |
-| Häußermann Merlot Reserve trocken (DE) | 2026 – 2035 | Gold (EcoWinner) | €20.00 | frisch & kraftvoll |  |  |
-| Häußermann Pinot Noir Reserve trocken (DE) | 2026 – 2035 | 87 (Eichelmann) | €22.00 | feinduftig & gute Struktur |  |  |
-| Häußermann Großer Fuchs trocken (DE) | 2026 – 2035 | 85 (Eichelmann) | €20.00 | Lemberger-Merlot-Pinot Cuvée, füllig & würzig | ★★★★ | Guter Wein, aber teuer und nicht herausragend |
-| Häußermann Rosé Saignée trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | trocken |  |  |
-
-| Violante Nero di troia rivera 2017 | jetzt trinken | 3.5 / 5 (Vivino) | ~$12.00 | fruchtbetont |  |  |
-| Santa Lucia Cavalcina 2017 | jetzt trinken | 87/100 (Critic) | ~$10.00 | leicht & fruchtbetont |  |  |
-| Rosso di Montalcino Camigliano 2019 | jetzt trinken | 90/100 (JS) | ~$25.00 | elegant & beerig |  |  |
-| San Lorenzo Uma I Ronchi Rosso Coneeo | jetzt trinken | 89/100 (Critic) | ~$18.00 | strukturiert & fruchtig |  |  |
-| Chateau Boutillot Bordeaux 2020 | jetzt trinken | 86/100 (JS) | ~$12.00 | fruchtbetont |  |  |
-| Chateau de Grezels Cahors 2020 | jetzt trinken | 88/100 (Critic) | ~$14.00 | kräftig & würzig |  |  |
-| Close de la Pero here Graves 2016 | jetzt trinken | 3.7 / 5 (Vivino) | ~$15.00 | ausgewogen |  |  |
-| Chateau Morillon Blaye | jetzt trinken | 3.8 / 5 (Vivino) | ~$10.00 | fruchtig |  |  |
-| Bourgogne Cotes D'Auxerre Corps de Garde Goisot | jetzt trinken | 4.0 / 5 (Vivino) | ~$34.00 | elegant & mineralisch |  |  |
-| Germoglio Sangiovese | jetzt trinken | 3.6 / 5 (Vivino) | ~$15.00 | fruchtbetont |  |  |
-| 150+1 Piedmont Doc Barbera | jetzt trinken | 87/100 (WE) | ~$15.00 | süffig & fruchtig |  |  |
-| Valdeus Premium 2020 Lisboa | jetzt trinken | 3.7 / 5 (Vivino) | ~$9.00 | fruchtig |  |  |
-| Tufivecchi Salice Salentino | jetzt trinken | 3.5 / 5 (Vivino) | €16.00 | würzig & süßlich |  |  |
-| Vinhas de Xisto Reserva | jetzt trinken | 91/100 (WE) | ~$17.00 | kräftig & strukturiert |  |  |
-| Fatalone Primitivo | jetzt trinken | 92/100 (JS) | ~$24.00 | schwer & süßlich |  |  |
-| Chateau de Lagarde Cuvee Bordeaux | jetzt trinken | 90/100 (W-S) | ~$14.00 | fruchtig (Bio) |  |  |
-| Chateau La Rose Du Pin Bordeaux 2016 | jetzt trinken | 91/100 (WE) | ~$15.00 | beerig & ausgewogen |  |  |
-| Chateau Pont de la Tonnelle 2020 Cotes de Bourg | jetzt trinken | Gold (G&G) | ~$13.00 | fruchtig & würzig |  |  |
-| Cuvée Hortense Entre-deux-Mers | jetzt trinken | 3.5 / 5 (Vivino) | €8.00 | frisch & aromatisch |  |  |
-| CHATEAU LESTRIBEAU Bordeaux 2022 | jetzt trinken | 3.7 / 5 (Vivino) | €8.00 | beerig & weich |  |  |
-| CHÂTEAU GUIRAUD-GRIMARD Cotes de Bourg 2021 | jetzt trinken | Hachette Rec. | €7.00 | strukturiert & holzig |  |  |
-| CHATEAU Baron Fillon Bordeaux Bio 2022 | jetzt trinken | 3.7 / 5 (Vivino) | €12.00 | fruchtig (Bio) |  |  |
-| Chateau La Pirouette Medoc 2019 | jetzt trinken | 89/100 (Critic) | ~$22.00 | strukturiert & würzig |  |  |
-| Chateau Fernon Dumes Graves 2019 | jetzt trinken | 88/100 (G&G) | ~$20.00 | beerig & mineralisch |  |  |
-| Baron de ley Reserva 2018 | jetzt trinken | 92/100 (JS) | ~$20.00 | intensiv & barrique |  |  |
-| Chateau De La Riviere Fronsac 2021 | jetzt trinken | 90/100 (Falstaff) | ~$25.00 | elegant & würzig |  |  |
-| Chateau La Sauvergade Bordeaux 2020 | jetzt trinken | 3.8 / 5 (Vivino) | ~$12.00 | ausgewogen & beerig |  |  |
-| Domaine Pech Cabanel | jetzt trinken | 3.9 / 5 (Vivino) | ~$15.00 | fein & strukturiert |  |  |
-| Château Relais de la Poste Bordeaux 2020 | jetzt trinken | 90/100 (Vinous) | ~$15.00 | fruchtig & würzig |  |  |
-| Gebrüder Nitnaus Zweigelt Neusiedlersee | jetzt trinken | 90/100 (Falstaff) | €12.00 | fruchtig & klassisch |  |  |
-| Esterhazy Pinot Noir Burgendland | jetzt trinken | 89/100 (Critic) | €15.00 | elegant & beerig |  |  |
-| Martinez Alesanco 2016 | jetzt trinken | 91/100 (JS) | ~$25.00 | intensiv & barrique |  |  |
-| Francis Coppola Claret 2021 | jetzt trinken | 88/100 (W-S) | ~$20.00 | kräftig & beerig |  |  |
-| Grand Bourdieu Graves 2018 | jetzt trinken | 1* (Hachette) | ~$18.00 | klassisch & beerig |  |  |
-| Fernandez de Pierola Crianza 2020 | jetzt trinken | 89/100 (Critic) | €15.00 | beerig & holzig |  |  |
-| Monastrell barrica Bodegas Los Frailes Edeka | jetzt trinken | 88/100 (Critic) | €8.00 | frisch & mediterran (Bio) |  |  |
-| Grange des Vignes Ardeche | jetzt trinken | 3.5 / 5 (Vivino) | €12.00 | einfach & süffig |  |  |
-| Bernard Haas Pinot Noir Alsace 2022 | jetzt trinken | 3.7 / 5 (Vivino) | €25.00 | leicht & säurebetont |  |  |
-| Château Boi Queyran Moulis 2018 | jetzt trinken | 87/100 (JS) | ~$20.00 | strukturiert & würzig |  |  |
-| Domains des Pasquiers 2022 | jetzt trinken | 91/100 (JS) | €15.00 | intensiv & fruchtig (Bio) |  |  |
-| MOULIN DE MALLET CHATEAU Bordeaux 2017 | jetzt trinken | 3.6 / 5 (Vivino) | €12.00 | fruchtig & weich |  |  |
-| CHÂTEAU CROIX DU BREUIL 2022 Edeka | jetzt trinken | Gold (Mundus Vini) | €7.99 | Johannisbeere, Himbeere & geschmeidig |  |  |
-| Osoti Crianza Rioja 2021 | jetzt trinken | 4.0 / 5 (Vivino) | €14.00 | klassisch & würzig (Bio) |  |  |
-| CHÂTEAU LA BLANQUERIE Bordeaux 2021 | jetzt trinken | 84/100 (W-S) | €12.00 | strukturiert (Bio) |  |  |
-| BERNARD MOREAU BOURGOGNE PINOT NOIR 2021 | jetzt trinken | 90/100 (Decanter) | €25.00 | beerig & frisch |  |  |
-| Chateau Malvat 2018 | jetzt trinken | 89/100 (WE) | ~$20.00 | beerig & vanillig |  |  |
-| Heinrich Naturtalent 2020 | jetzt trinken | 87/100 (Critic) | €18.00 | säurebetont & natur |  |  |
-| Dehesa Gago 2023 | jetzt trinken | 91/100 (JS) | €12.00 | intensiv & fruchtig |  |  |
-| ALSACE GRAND CRU Schlossberg RIESLING BERNARD HAAS 2023 | jetzt trinken | 4.9 / 5 (Winery) | €20.00 | mineralisch & fruchtig |  |  |
-| chateauneuf du pape 2023 | jetzt trinken | 95+ (Critic) | ~$20-$60+ | kräftig & komplex |  |  |
-| Kracher Zweigelt 2019 | jetzt trinken | 89/100 (JS) | €18.00 | beerig & schokoladig |  |  |
-| Rioja Otonal 2019 | jetzt trinken | 93/100 (WE) | €15.00 | fruchtig & klassisch |  |  |
-| Domina 2022 Seufert | jetzt trinken | 88/100 (Est.) | €11.00 | elegant & fein |  |  |
-| Vitisberg 2021 | jetzt trinken | local favorite | €9.00 | ausgewogen |  |  |
-| Gruber Röschitz | jetzt trinken | 91/100 (WE) | €15.00 | frisch & pfeffrig |  |  |
-| Heinrich Blaufränkisch | jetzt trinken | 91/100 (JS) | €18.00 | fruchtig (Bio) |  |  |
-| Schnabl Blauer | jetzt trinken | 91/100 (Falstaff) | €8.00 | Portugieser süffig |  |  |
-| Hagen Zweigelt 2022 | jetzt trinken | 88/100 (WE) | €15.00 | beerig & frisch |  |  |
-| Castello die Torre in Pietra 2023 | jetzt trinken | 3.6 / 5 (Vivino) | €12.00 | fruchtig & süffig |  |  |
-| Teroldego Rotaliano gaierhof | jetzt trinken | 3.6 / 5 (Vivino) | €14.00 | beerig & erdig |  |  |
-| Chapelle Saint Pierre 23 | jetzt trinken | 3.6 / 5 (Vivino) | €11.00 | kräftig & fruchtig (Bio) |  |  |
-| Domaine des Carabiniers | jetzt trinken | 90/100 (Critic) | €18.00 | fruchtig (Bio) |  |  |
-| Weber Welschriesling 2024 Bio | jetzt trinken | local favorite | €10.00 | fruchtig & spritzig |  |  |
-| SCHMIDT WEINGUT 2023 SOUVIGNIER GRIS Bio | jetzt trinken | 92+ (Falstaff) | €10.00 | vanillig & schlicht |  |  |
-| Bio Weingut Sonnenhügel Blauer Portugieser 2022 | jetzt trinken | local favorite | €10.00 | harmonisch & leicht |  |  |
-| 2023 Zweigelt Schrattenthal ZULL | jetzt trinken | 90 (Falstaff) | €12.00 | beerig & würzig |  |  |
-| Dolde 2022 Roter Jura | jetzt trinken | 92+ (Falstaff) | €12.00 | elegant & beerig |  |  |
-| Dolde 2023 Weißburgunder Brauner Jura | jetzt trinken | 92+ (Falstaff) | €12.00 | fruchtig & kräftig |  |  |
-| SCHMIDT WEINGUT TAMINO KAISERSTUHL BADEN 2019 | jetzt trinken | 3.8 / 5 (Vivino) | €10.00 | würzig & beerig (Bio) |  |  |
-| RAÚLPÉREZ LA POULOSA LOMAS DE VALTUILLE 2021 | jetzt trinken | 95/100 (Lobb.) | €20.00 | beerig & komplex |  |  |
-| Piwi KollektivSouvignier Gris 2024 Piwi Bio | jetzt trinken | 90+ (Falstaff) | €9.00 | frisch & fruchtig |  |  |
-| ERNST Grüner Veltliner 2023 DEUTSCHKREUTZ ÖSTERREICH | jetzt trinken | 3.6 / 5 (Vivino) | €8.00 | fruchtig & süffig |  |  |
-| Geo Blauer Portugieser 2024 | jetzt trinken | local favorite | €7.50 | harmonisch & intensiv |  |  |
-| Pröglhöf 1771 ANOMIA | jetzt trinken | 3.6 / 5 (Vivino) | €14.50 | harmonisch & fruchtig |  |  |
-| REFOSCO P. R. Terra musa by Musaragno | jetzt trinken | 3.2 / 5 (Vivino) | €9.50 | fruchtig (Bio) |  |  |
-| Fink Cuvée Heideboden 2020 HEIDEBODEN BURGENLAND | jetzt trinken | organic | €7.00 | beerig & samtig |  |  |
-| Fink Zweigelt Reserve 2017 | jetzt trinken | 90 (Falstaff) | €13.00 | beerig & schokoladig |  |  |
-| Bergmann Zweigelt Exclusive 2023 | jetzt trinken | 4.0 / 5 (Vivino) | €8.50 | fruchtig & samtig |  |  |
-| Zull Zweigelt Schrattenthal 2023 | jetzt trinken | 90 (Falstaff) | €12.00 | harmonisch |  |  |
-| Hahn Blauer Zweigelt 2023 | jetzt trinken | 91 (Falstaff) | €9.00 | beerig & weich |  |  |
-| FROTZLER PINOT NOIR Ried Steinbreiten 2022 | jetzt trinken | Gold (NÖ) | €9.50 | samtig & weich |  |  |
-| HEBENSTREIT PINOT NOIR Ried Breiteln | jetzt trinken | 3.8 / 5 (Vivino) | €15.50 | strukturiert |  |  |
-| WEINGUT SONNENHÜGEL BALDUR [SOHN DER SONNE] 2023 | jetzt trinken | Gold (NÖ) | €14.00 | holzig & vanillig |  |  |
-| VILLA DES CROIX Pinot Noir Pays d'Oc 2023 | jetzt trinken | 3.9 / 5 (Vivino) | €10.00 | fruchtig & harmonisch |  |  |
-| Heinrich St. Laurent Rosen 2017 | jetzt trinken | 92 (Falstaff) | €20.00 | elegant & säuerlich |  |  |
-| ARKADENHOF HAUSDORF BLAUER ZWEIGELT WAGRAM 2018 | jetzt trinken | 3.8 (Vivino) | €10.00 | fruchtig & würzig |  |  |
-| CHATEAU DE CARAGUILHES 2023 | jetzt trinken | 94/100 (RVF) | €15.00 | beerig & kräftig |  |  |
-| Adobe Reserva Carmenere 2023 | jetzt trinken | 90 (JS) | €13.00 | ausgewogen & beerig |  |  |
-| Ernst BIO Zweigelt 2021 | jetzt trinken | 89/100 (Falstaff) | €8.90 | Sauerkirsche, Brombeere & samtiges Tannin |  |  |
-| Häußermann Spätburgunder Premium 2019 (DE) | jetzt trinken | 1.5* (Eichelmann) | €12.00 | samtig, dezent Vanille & Fruchtwucht |  | Schöne Säure, nicht zu dominant. Gut! |
-| Rieger Pinot Noir 2023 (DE) | jetzt trinken | 92/100 (Falstaff) | €10.00 | Pflaume, Sauerkirsche & Kräuterwürze |  | Leicht, bisschen säuerlich. kein Tip |
-| Riegel Erzeugermarken Sauvignon Blanc PARRA Familia (ES) | jetzt trinken | Silber (Mundus Vini) | €7.50 | Litschi, Stachelbeere & erfrischend |  | Angenehme Frucht, süffig. preiswert! |
-| Hoffmann Spätburgunder 2022 (DE) | jetzt trinken | 89/100 (Est.) | €10.00 | dunkle Beeren, feine Würze & vollmundig |  | Recht leicht, süffig. wenig Tiefe |
+| Weninger Kékfrankos Balf 2020 (AT) | 2020 - 2028 | 91/100 (Lobenberg) | €11.90 | 0 | ★★★★ | Leicht säuerlich. Naturweinnote. Harmonisch |
+| Venus La Universal Dido 2022 (ES) | 2022 - 2030 | 93/100 (Parker) | €19.90 | 0 |  |  |
+| Jorge Navascués Mancuso Garnacha 2021 (ES) | 2021 - 2029 | 95/100 (Lobenberg) | €18.50 | 0 |  |  |
+| i Clivi Schioppettino 2023 (IT) | 2023 - 2031 | 95/100 (Lobenberg) | €25.00 | 0 |  |  |
+| Finca Feliz Tesoro Malbec 2025 (AR) | 2025 - 2033 | 95/100 (Lobenberg) | €15.00 | 0 |  |  |
+| Weninger Ponzichter 2024 (AT) | 2024 - 2032 | 91/100 (Lobenberg) | €11.50 | 0 |  |  |
+| Le Pupille Morellino di Scansano Riserva 2022 (IT) | 2022 - 2030 | 94/100 (Suckling) | €21.90 | 0 |  |  |
+| Vaglio Chango Cuvée 2019 (AR) | 2019 - 2027 | 95/100 (Lobenberg) | €17.50 | 0 |  |  |
+| Agricole Vallone Castel Serranova 2019 (IT) | 2019 - 2027 | 95/100 (Lobenberg) | €13.50 | 0 |  |  |
+| Villa Saletta Chianti Superiore 2019 (IT) | 2019 - 2027 | 90-92/100 (Est.) | €15.50 | 0 |  |  |
+| Bodegas y Vinedos Ponce Buena Pinta Moravia Agria 2024 (ES) | 2024 - 2032 | 95/100 (Lobenberg) | €11.90 | 0 |  |  |
+| Le Sacre Janoueix Chateau Le Sacre St. Georges 2023 (FR) | 2023 - 2031 | 95+/100 (Lobenberg) | €19.00 | 0 |  |  |
+| Can Rafols dels Caus Terraprima Tinto 2022 (ES) | 2022 - 2030 | 92/100 (Est.) | €13.80 | 0 |  |  |
+| Adega Algueira Patrimonio 2018 (ES) | 2018 - 2026 | 93/100 (Lobenberg) | €18.90 | 0 |  |  |
+| Le Pupille Morellino di Scansano 2023 (IT) | 2023 - 2031 | 90/100 (Parker) | €11.90 | 0 |  |  |
+| Sainte Léocadie Cuvée Leukadios Rouge 2022 (FR) | 2022 - 2030 | 90/100 (Lobenberg) | €9.90 | 0 |  |  |
+| Sainte Léocadie Cuvee Les Clauses 2022 (FR) | 2022 - 2030 | 91-92/100 (Lobenberg) | €11.00 | 0 |  |  |
+| Felsina Chianti Colli Senesi Farnetella 2022 (IT) | 2022 - 2030 | 92/100 (Lobenberg) | €11.90 | 0 |  |  |
+| Knipser Cuvée Gaudenz trocken 2019 (DE) | 2019 - 2027 | 88/100 (Vivino) | €14.00 | 0 |  |  |
+| Roc de Levraut Grand Roc Bordeaux Superieur 2022 (FR) | 2022 - 2030 | 91/100 (Lobenberg) | €13.15 | 0 |  |  |
+| Monte Antico Monte Antico 2021 (IT) | 2021 - 2029 | 91/100 (Suckling) | €16.00 | 0 |  |  |
+| Weninger Ponzichter 2023 (AT) | 2023 - 2031 | 91/100 (Est.) | €12.00 | 0 |  |  |
+| Hanspeter Ziereisen Blauer Spätburgunder trocken 2022 (DE) | 2022 - 2030 | 94/100 (Falstaff) | €10.80 | 0 |  |  |
+| Hanspeter Ziereisen Blauer Spätburgunder TS (ehemals Tschuppen) trocken 2022 (DE) | 2022 - 2030 | 91/100 (Wine Adv.) | €12.90 | 0 |  |  |
+| Villa des Croix Pinot Noir 2023 (FR) | 2023 - 2031 | 89/100 (Lobenberg) | €9.95 | 0 |  |  |
+| Alvaro Castro Dao Alvaro Castro 2021 (PT) | 2021 - 2029 | 91/100 (Lobenberg) | €12.50 | 0 |  |  |
+| Daumas Gassac / Aime Guibert Guilhem Rouge 2023 (FR) | 2023 - 2031 | 92/100 (Est.) | €8.95 | 0 |  |  |
+| Casa Castillo Casa Castillo Monastrell 2023 (ES) | 2023 - 2031 | 93/100 (Parker) | €11.00 | 0 |  |  |
+| Knipser Blauer Spätburgunder Gutswein trocken 2020 (DE) | 2020 - 2028 | 93/100 (Lobenberg) | €12.75 | 0 | ★★★ | Nicht schlecht |
+| 4 Kilos Motor 2020 (ES) | 2020 - 2028 | 91/100 (Est.) | €22.50 | 0 |  |  |
+| Alegre Valganon Garnacha Tinto 2019 (ES) | 2019 - 2027 | 93/100 (Lobenberg) | €17.00 | 0 |  |  |
+| Alegre Valgañón Garnacha Tinto 2020 (ES) | 2020 - 2028 | 93/100 (Est.) | €20.00 | 0 |  |  |
+| Raul Perez La Vizcaina La Poulosa Mencia 2021 (ES) | 2021 - 2029 | 95/100 (Lobenberg) | €22.00 | 0 |  |  |
+| du Retout Chateau du Retout Cru Bourgeois Supérieur 2020 (FR) | 2020 - 2028 | 96+/100 (Lobenberg) | €18.50 | 0 |  |  |
+| Heinrich Pinot Noir 2022 (AT) | 2022 - 2030 | 90/100 (Est.) | €12.50 | 0 | ★★★★ | Typisches Maische Natur-Wein Aroma. Guter Wein! |
+| Remelluri – Telmo Rodriguez Lindes de Remelluri - Vinedos de Labastida 2020 (ES) | 2020 - 2028 | 93/100 (Est.) | €13.90 | 0 |  |  |
+| Castro Ventosa De La Familia Perez Valtuille Vino de Villa 2021 (ES) | 2021 - 2029 | 94/100 (Parker) | €27.00 | 0 |  |  |
+| Heinrich Naked Rosé 2023 (AT) | 2023 - 2031 | 91/100 (Lobenberg) | €13.00 | 0 |  |  |
+| Artuke Artuke 2023 (ES) | 2023 - 2031 | 90/100 (Est.) | €10.90 | 0 | ★★★ | Okay, aber zu teuer |
+| G.D. Vajra Claré J.C. Langhe Nebbiolo 2023 (IT) | 2023 - 2031 | 94+/100 (Lobenberg) | €17.90 | 0 |  |  |
+| Gago Viticultores – Telmo Rodriguez Dehesa Gago Tinta de Toro 2023 (ES) | 2023 - 2031 | 90+/100 (Lobenberg) | €11.50 | 0 |  |  |
+| Bodegas y Vinedos Ponce P.F 2023 (ES) | 2023 - 2031 | 96+/100 (Parker) | €19.00 | 0 |  |  |
+| Kracher - Weinlaubenhof Zweigelt 2019 (AT) | 2019 - 2027 | 89/100 (Lobenberg) | €12.00 | 0 |  |  |
+| Bodegas y Vinedos Ponce Clos Lojen 2023 (ES) | 2023 - 2031 | 93/100 (Parker) | €10.60 | 0 |  |  |
+| Häußermann Spätburgunder trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | 0 | ★★★★ | Schöne Säure, aber nicht zu dominant. Gut! |
+| Häußermann Trollinger Urgestein trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | 0 |  |  |
+| Häußermann Cabernet Dorsa trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €9.00 | 0 |  |  |
+| Häußermann Lemberger Premium trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €12.00 | 0 |  |  |
+| Häußermann Merlot Premium trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €12.00 | 0 |  |  |
+| Häußermann Spätburgunder Premium trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €12.00 | 0 |  |  |
+| Häußermann Hüsern 6 Cuvée rot Premium trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €12.00 | 0 |  |  |
+| Häußermann Lemberger Reserve trocken (DE) | jetzt trinken | 88 (Eichelmann) | €20.00 | 0 |  |  |
+| Häußermann Merlot Reserve trocken (DE) | jetzt trinken | Gold (EcoWinner) | €20.00 | 0 |  |  |
+| Häußermann Pinot Noir Reserve trocken (DE) | jetzt trinken | 87 (Eichelmann) | €22.00 | 0 |  |  |
+| Häußermann Großer Fuchs trocken (DE) | jetzt trinken | 85 (Eichelmann) | €20.00 | 0 | ★★★★ | Guter Wein, aber teuer und nicht herausragend |
+| Häußermann Rosé Saignée trocken (DE) | jetzt trinken | 1.5* (Eichelmann) | €8.00 | 0 |  |  |
+| Violante Nero di troia rivera 2017 | 2017 - 2025 | 3.5 / 5 (Vivino) | €12.00 | 0 |  |  |
+| Santa Lucia Cavalcina 2017 | 2017 - 2025 | 87/100 (Critic) | €10.00 | 0 |  |  |
+| Rosso di Montalcino Camigliano 2019 | 2019 - 2027 | 90/100 (JS) | €25.00 | 0 |  |  |
+| San Lorenzo Uma I Ronchi Rosso Coneeo | jetzt trinken | 89/100 (Critic) | €18.00 | 0 |  |  |
+| Chateau Boutillot Bordeaux 2020 | 2020 - 2028 | 86/100 (JS) | €12.00 | 0 |  |  |
+| Chateau de Grezels Cahors 2020 | 2020 - 2028 | 88/100 (Critic) | €14.00 | 0 |  |  |
+| Close de la Pero here Graves 2016 | 2016 - 2024 | 3.7 / 5 (Vivino) | €15.00 | 0 |  |  |
+| Chateau Morillon Blaye | jetzt trinken | 3.8 / 5 (Vivino) | €10.00 | 0 |  |  |
+| Bourgogne Cotes D'Auxerre Corps de Garde Goisot | jetzt trinken | 4.0 / 5 (Vivino) | €34.00 | 0 |  |  |
+| Germoglio Sangiovese | jetzt trinken | 3.6 / 5 (Vivino) | €15.00 | 0 |  |  |
+| 150+1 Piedmont Doc Barbera | jetzt trinken | 87/100 (WE) | €15.00 | 0 |  |  |
+| Valdeus Premium 2020 Lisboa | 2020 - 2028 | 3.7 / 5 (Vivino) | €9.00 | 0 |  |  |
+| Tufivecchi Salice Salentino | jetzt trinken | 3.5 / 5 (Vivino) | €16.00 | 0 |  |  |
+| Vinhas de Xisto Reserva | jetzt trinken | 91/100 (WE) | €17.00 | 0 |  |  |
+| Fatalone Primitivo | jetzt trinken | 92/100 (JS) | €24.00 | 0 |  |  |
+| Chateau de Lagarde Cuvee Bordeaux | jetzt trinken | 90/100 (W-S) | €14.00 | 0 |  |  |
+| Chateau La Rose Du Pin Bordeaux 2016 | 2016 - 2024 | 91/100 (WE) | €15.00 | 0 |  |  |
+| Chateau Pont de la Tonnelle 2020 Cotes de Bourg | 2020 - 2028 | Gold (G&G) | €13.00 | 0 |  |  |
+| Cuvée Hortense Entre-deux-Mers | jetzt trinken | 3.5 / 5 (Vivino) | €8.00 | 0 |  |  |
+| CHATEAU LESTRIBEAU Bordeaux 2022 | 2022 - 2030 | 3.7 / 5 (Vivino) | €8.00 | 0 |  |  |
+| CHÂTEAU GUIRAUD-GRIMARD Cotes de Bourg 2021 | 2021 - 2029 | Hachette Rec. | €7.00 | 0 |  |  |
+| CHATEAU Baron Fillon Bordeaux Bio 2022 | 2022 - 2030 | 3.7 / 5 (Vivino) | €12.00 | 0 |  |  |
+| Chateau La Pirouette Medoc 2019 | 2019 - 2027 | 89/100 (Critic) | €22.00 | 0 |  |  |
+| Chateau Fernon Dumes Graves 2019 | 2019 - 2027 | 88/100 (G&G) | €20.00 | 0 |  |  |
+| Baron de ley Reserva 2018 | 2018 - 2026 | 92/100 (JS) | €20.00 | 0 |  |  |
+| Chateau De La Riviere Fronsac 2021 | 2021 - 2029 | 90/100 (Falstaff) | €25.00 | 0 |  |  |
+| Chateau La Sauvergade Bordeaux 2020 | 2020 - 2028 | 3.8 / 5 (Vivino) | €12.00 | 0 |  |  |
+| Domaine Pech Cabanel | jetzt trinken | 3.9 / 5 (Vivino) | €15.00 | 0 |  |  |
+| Château Relais de la Poste Bordeaux 2020 | 2020 - 2028 | 90/100 (Vinous) | €15.00 | 0 |  |  |
+| Gebrüder Nitnaus Zweigelt Neusiedlersee | jetzt trinken | 90/100 (Falstaff) | €12.00 | 0 |  |  |
+| Esterhazy Pinot Noir Burgendland | jetzt trinken | 89/100 (Critic) | €15.00 | 0 |  |  |
+| Martinez Alesanco 2016 | 2016 - 2024 | 91/100 (JS) | €25.00 | 0 |  |  |
+| Francis Coppola Claret 2021 | 2021 - 2029 | 88/100 (W-S) | €20.00 | 0 |  |  |
+| Grand Bourdieu Graves 2018 | 2018 - 2026 | 1* (Hachette) | €18.00 | 0 |  |  |
+| Fernandez de Pierola Crianza 2020 | 2020 - 2028 | 89/100 (Critic) | €15.00 | 0 |  |  |
+| Monastrell barrica Bodegas Los Frailes Edeka | jetzt trinken | 88/100 (Critic) | €8.00 | 0 |  |  |
+| Grange des Vignes Ardeche | jetzt trinken | 3.5 / 5 (Vivino) | €12.00 | 0 |  |  |
+| Bernard Haas Pinot Noir Alsace 2022 | 2022 - 2030 | 3.7 / 5 (Vivino) | €25.00 | 0 |  |  |
+| Château Boi Queyran Moulis 2018 | 2018 - 2026 | 87/100 (JS) | €20.00 | 0 |  |  |
+| Domains des Pasquiers 2022 | 2022 - 2030 | 91/100 (JS) | €15.00 | 0 |  |  |
+| MOULIN DE MALLET CHATEAU Bordeaux 2017 | 2017 - 2025 | 3.6 / 5 (Vivino) | €12.00 | 0 |  |  |
+| CHÂTEAU CROIX DU BREUIL 2022 Edeka | 2022 - 2030 | Gold (Mundus Vini) | €7.99 | 0 |  |  |
+| Osoti Crianza Rioja 2021 | 2021 - 2029 | 4.0 / 5 (Vivino) | €14.00 | 0 |  |  |
+| CHÂTEAU LA BLANQUERIE Bordeaux 2021 | 2021 - 2029 | 84/100 (W-S) | €12.00 | 0 |  |  |
+| BERNARD MOREAU BOURGOGNE PINOT NOIR 2021 | 2021 - 2029 | 90/100 (Decanter) | €25.00 | 0 |  |  |
+| Chateau Malvat 2018 | 2018 - 2026 | 89/100 (WE) | €20.00 | 0 |  |  |
+| Heinrich Naturtalent 2020 | 2020 - 2028 | 87/100 (Critic) | €18.00 | 0 |  |  |
+| Dehesa Gago 2023 | 2023 - 2031 | 91/100 (JS) | €12.00 | 0 |  |  |
+| ALSACE GRAND CRU Schlossberg RIESLING BERNARD HAAS 2023 | 2023 - 2031 | 4.9 / 5 (Winery) | €20.00 | 0 |  |  |
+| chateauneuf du pape 2023 | 2023 - 2031 | 95+ (Critic) | €20.00 | 0 |  |  |
+| Kracher Zweigelt 2019 | 2019 - 2027 | 89/100 (JS) | €18.00 | 0 |  |  |
+| Rioja Otonal 2019 | 2019 - 2027 | 93/100 (WE) | €15.00 | 0 |  |  |
+| Domina 2022 Seufert | 2022 - 2030 | 88/100 (Est.) | €11.00 | 0 |  |  |
+| Vitisberg 2021 | 2021 - 2029 | local favorite | €9.00 | 0 |  |  |
+| Gruber Röschitz | jetzt trinken | 91/100 (WE) | €15.00 | 0 |  |  |
+| Heinrich Blaufränkisch | jetzt trinken | 91/100 (JS) | €18.00 | 0 |  |  |
+| Schnabl Blauer | jetzt trinken | 91/100 (Falstaff) | €8.00 | 0 |  |  |
+| Hagen Zweigelt 2022 | 2022 - 2030 | 88/100 (WE) | €15.00 | 0 |  |  |
+| Castello die Torre in Pietra 2023 | 2023 - 2031 | 3.6 / 5 (Vivino) | €12.00 | 0 |  |  |
+| Teroldego Rotaliano gaierhof | jetzt trinken | 3.6 / 5 (Vivino) | €14.00 | 0 |  |  |
+| Chapelle Saint Pierre 23 | jetzt trinken | 3.6 / 5 (Vivino) | €11.00 | 0 |  |  |
+| Domaine des Carabiniers | jetzt trinken | 90/100 (Critic) | €18.00 | 0 |  |  |
+| Weber Welschriesling 2024 Bio | 2024 - 2032 | local favorite | €10.00 | 0 |  |  |
+| SCHMIDT WEINGUT 2023 SOUVIGNIER GRIS Bio | 2023 - 2031 | 92+ (Falstaff) | €10.00 | 0 |  |  |
+| Bio Weingut Sonnenhügel Blauer Portugieser 2022 | 2022 - 2030 | local favorite | €10.00 | 0 |  |  |
+| 2023 Zweigelt Schrattenthal ZULL | 2023 - 2031 | 90 (Falstaff) | €12.00 | 0 |  |  |
+| Dolde 2022 Roter Jura | 2022 - 2030 | 92+ (Falstaff) | €12.00 | 0 |  |  |
+| Dolde 2023 Weißburgunder Brauner Jura | 2023 - 2031 | 92+ (Falstaff) | €12.00 | 0 |  |  |
+| SCHMIDT WEINGUT TAMINO KAISERSTUHL BADEN 2019 | 2019 - 2027 | 3.8 / 5 (Vivino) | €10.00 | 0 |  |  |
+| RAÚLPÉREZ LA POULOSA LOMAS DE VALTUILLE 2021 | 2021 - 2029 | 95/100 (Lobb.) | €20.00 | 0 |  |  |
+| Piwi KollektivSouvignier Gris 2024 Piwi Bio | 2024 - 2032 | 90+ (Falstaff) | €9.00 | 0 |  |  |
+| ERNST Grüner Veltliner 2023 DEUTSCHKREUTZ ÖSTERREICH | 2023 - 2031 | 3.6 / 5 (Vivino) | €8.00 | 0 |  |  |
+| Geo Blauer Portugieser 2024 | 2024 - 2032 | local favorite | €7.50 | 0 |  |  |
+| Pröglhöf 1771 ANOMIA | jetzt trinken | 3.6 / 5 (Vivino) | €14.50 | 0 |  |  |
+| REFOSCO P. R. Terra musa by Musaragno | jetzt trinken | 3.2 / 5 (Vivino) | €9.50 | 0 |  |  |
+| Fink Cuvée Heideboden 2020 HEIDEBODEN BURGENLAND | 2020 - 2028 | organic | €7.00 | 0 |  |  |
+| Fink Zweigelt Reserve 2017 | 2017 - 2025 | 90 (Falstaff) | €13.00 | 0 |  |  |
+| Bergmann Zweigelt Exclusive 2023 | 2023 - 2031 | 4.0 / 5 (Vivino) | €8.50 | 0 |  |  |
+| Zull Zweigelt Schrattenthal 2023 | 2023 - 2031 | 90 (Falstaff) | €12.00 | 0 |  |  |
+| Hahn Blauer Zweigelt 2023 | 2023 - 2031 | 91 (Falstaff) | €9.00 | 0 |  |  |
+| FROTZLER PINOT NOIR Ried Steinbreiten 2022 | 2022 - 2030 | Gold (NÖ) | €9.50 | 0 |  |  |
+| HEBENSTREIT PINOT NOIR Ried Breiteln | jetzt trinken | 3.8 / 5 (Vivino) | €15.50 | 0 |  |  |
+| WEINGUT SONNENHÜGEL BALDUR [SOHN DER SONNE] 2023 | 2023 - 2031 | Gold (NÖ) | €14.00 | 0 |  |  |
+| VILLA DES CROIX Pinot Noir Pays d'Oc 2023 | 2023 - 2031 | 3.9 / 5 (Vivino) | €10.00 | 0 |  |  |
+| Heinrich St. Laurent Rosen 2017 | 2017 - 2025 | 92 (Falstaff) | €20.00 | 0 |  |  |
+| ARKADENHOF HAUSDORF BLAUER ZWEIGELT WAGRAM 2018 | 2018 - 2026 | 3.8 (Vivino) | €10.00 | 0 |  |  |
+| CHATEAU DE CARAGUILHES 2023 | 2023 - 2031 | 94/100 (RVF) | €15.00 | 0 |  |  |
+| Adobe Reserva Carmenere 2023 | 2023 - 2031 | 90 (JS) | €13.00 | 0 |  |  |
+| Ernst BIO Zweigelt 2021 | 2021 - 2029 | 89/100 (Falstaff) | €8.90 | 0 |  |  |
+| Häußermann Spätburgunder Premium 2019 (DE) | 2019 - 2027 | 1.5* (Eichelmann) | €12.00 | 0 |  | Schöne Säure, nicht zu dominant. Gut! |
+| Rieger Pinot Noir 2023 (DE) | 2023 - 2031 | 92/100 (Falstaff) | €10.00 | 0 |  | Leicht, bisschen säuerlich. kein Tip |
+| Riegel Erzeugermarken Sauvignon Blanc PARRA Familia (ES) | jetzt trinken | Silber (Mundus Vini) | €7.50 | 0 |  | Angenehme Frucht, süffig. preiswert! |
+| Hoffmann Spätburgunder 2022 (DE) | 2022 - 2030 | 89/100 (Est.) | €10.00 | 0 |  | Recht leicht, süffig. wenig Tiefe |

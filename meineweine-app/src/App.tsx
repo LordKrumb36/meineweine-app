@@ -1,10 +1,9 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Wine, LayoutDashboard, Settings, LogOut, Filter, Download, CheckCircle, Clock, Upload, Plus, ArrowUpDown } from 'lucide-react';
-import winesData from './data/wines.json';
+import { supabase } from './utils/supabaseClient';
 import { WineCard, type UserWineData, type WineData } from './components/WineCard';
 import { AddWineModal } from './components/AddWineModal';
-import { useLocalStorage } from './hooks/useLocalStorage';
-import { isReadyToDrink, exportData, parsePrice, parseRating } from './utils/wineUtils';
+import { isReadyToDrink, parsePrice, parseRating } from './utils/wineUtils';
 
 type FilterType = 'all' | 'ready' | 'inStock';
 type SortType = 'name' | 'price-asc' | 'price-desc' | 'rating-desc' | 'user-rating-desc';
@@ -25,163 +24,106 @@ function getCountryCode(name: string): string {
 }
 
 function App() {
+  const [wines, setWines] = useState<WineData[]>([]);
+  const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
   const [sortBy, setSortBy] = useState<SortType>('name');
   const [selectedCountry, setSelectedCountry] = useState('');
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const [userRatings, setUserRatings] = useLocalStorage<Record<string, UserWineData>>('weinlager-user-data', {});
-  const [customWines, setCustomWines] = useLocalStorage<WineData[]>('weinlager-custom-wines', []);
-  const [inventory, setInventory] = useLocalStorage<Record<string, number>>('weinlager-inventory', {});
+  
+  // Fetch wines from Supabase on mount
+  useEffect(() => {
+    fetchWines();
+  }, []);
 
-  const allWines = useMemo(() => {
-    // Filter out custom wines that have been synced and are now in winesData
-    const staticNames = new Set(winesData.map(w => w.name.toLowerCase()));
-    const uniqueCustomWines = customWines.filter(w => !staticNames.has(w.name.toLowerCase()));
-    return [...winesData, ...uniqueCustomWines];
-  }, [customWines]);
+  async function fetchWines() {
+    try {
+      setLoading(true);
+      const { data, error } = await supabase
+        .from('wines')
+        .select('*')
+        .order('name');
 
-  const handleUpdate = (id: string, data: Partial<UserWineData>) => {
-    setUserRatings((prev) => ({
-      ...prev,
-      [id]: {
-        ...(prev[id] || { rating: 0, comment: '' }),
-        ...data,
-      },
-    }));
+      if (error) throw error;
+      setWines(data || []);
+    } catch (error) {
+      console.error('Error fetching wines:', error);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const handleUpdate = async (id: string, data: Partial<UserWineData>) => {
+    // 1. Optimistic UI update
+    setWines(prev => prev.map(w => w.id === id ? { ...w, ...data } : w));
+
+    // 2. Update Supabase
+    try {
+      const { error } = await supabase
+        .from('wines')
+        .update({
+          userRating: data.rating,
+          userComment: data.comment
+        })
+        .eq('id', id);
+
+      if (error) throw error;
+    } catch (error) {
+      console.error('Error updating wine:', error);
+      fetchWines(); 
+    }
   };
 
-  const handleInventoryChange = (id: string, quantity: number) => {
-    setInventory((prev) => ({
-      ...prev,
-      [id]: quantity,
-    }));
+  const handleInventoryChange = async (id: string, quantity: number) => {
+    // 1. Optimistic UI update
+    setWines(prev => prev.map(w => w.id === id ? { ...w, inventory: quantity } : w));
+
+    // 2. Update Supabase
+    try {
+      const { error } = await supabase
+        .from('wines')
+        .update({ inventory: quantity })
+        .eq('id', id);
+
+      if (error) throw error;
+    } catch (error) {
+      console.error('Error updating inventory:', error);
+      fetchWines();
+    }
   };
 
   const handleAddWine = async (newWine: WineData, initialQuantity: number = 1) => {
-    // 1. Update local state immediately
-    setCustomWines((prev) => [...prev, newWine]);
-
-    // Set initial inventory
-    setInventory((prev) => ({
-      ...prev,
-      [newWine.id]: initialQuantity,
-    }));
-
-    // 2. Sync to the master TXT file via our backend server
+    const wineWithInventory = { ...newWine, inventory: initialQuantity };
     try {
-      const response = await fetch('http://localhost:3001/api/add-wine', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newWine),
-      });
+      const { error } = await supabase
+        .from('wines')
+        .insert([wineWithInventory]);
 
-      if (!response.ok) {
-        throw new Error('Fehler beim Speichern in Weinlager_Details.txt');
-      }
+      if (error) throw error;
       
-      console.log('Erfolgreich in Weinlager_Details.txt gespeichert.');
-    } catch (err) {
-      console.error('Sync-Fehler:', err);
-      alert('Der Wein wurde lokal hinzugefügt, konnte aber nicht in der Datei Weinlager_Details.txt gespeichert werden. Läuft der Sync-Server?');
-    }
-  };
-
-  const handleExport = async () => {
-    // 1. Prepare data for export, merging current userRatings
-    const exportData = allWines.map(wine => ({
-      ...wine,
-      userRating: userRatings[wine.id]?.rating || 0,
-      userComment: userRatings[wine.id]?.comment || '',
-    }));
-
-    // 2. Sync directly to our local file system via backend
-    try {
-      const response = await fetch('http://localhost:3001/api/export', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(exportData),
-      });
-
-      if (!response.ok) {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.details || errorData.error || 'Serverfehler');
-      }
-      
-      alert('Alle Daten wurden in mein_weinlager_export.json gespeichert.');
-    } catch (err: any) {
-      console.error('Export-Fehler:', err);
-      alert(`Fehler beim Exportieren: ${err.message}. Läuft der Sync-Server?`);
-    }
-  };
-
-  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      try {
-        const json = JSON.parse(event.target?.result as string);
-        setUserRatings((prev) => {
-          const next = { ...prev };
-          let count = 0;
-          
-          json.forEach((item: any) => {
-            // Find wine by ID first, then by name
-            const wine = allWines.find(w => w.id === item.id) || 
-                         allWines.find(w => w.name.toLowerCase() === item.name?.toLowerCase());
-            
-            if (wine && (item.userRating !== undefined || item.userComment !== undefined)) {
-              next[wine.id] = {
-                rating: item.userRating || 0,
-                comment: item.userComment || ''
-              };
-              count++;
-            }
-          });
-          
-          console.log(`Imported ${count} ratings/comments.`);
-          return next;
-        });
-        alert('Daten erfolgreich importiert!');
-      } catch (err) {
-        console.error(err);
-        alert('Fehler beim Importieren der Datei.');
-      }
-    };
-    reader.readAsText(file);
-  };
-
-  const handleSyncToTxt = async (wine: WineData) => {
-    try {
-      const response = await fetch('http://localhost:3001/api/add-wine', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(wine),
-      });
-
-      if (!response.ok) throw new Error();
-      alert(`"${wine.name}" wurde erfolgreich in Weinlager_Details.txt gespeichert.`);
-    } catch (err) {
-      alert('Speichern fehlgeschlagen. Läuft der Sync-Server?');
+      setWines(prev => [...prev, wineWithInventory]);
+      setIsAddModalOpen(false);
+    } catch (error) {
+      console.error('Error adding wine:', error);
+      alert('Fehler beim Hinzufügen des Weins.');
     }
   };
 
   const availableCountries = useMemo(() => {
-    const codes = [...new Set(allWines.map(w => getCountryCode(w.name)).filter(Boolean))].sort();
+    const codes = [...new Set(wines.map(w => getCountryCode(w.name)).filter(Boolean))].sort();
     return codes;
-  }, [allWines]);
+  }, [wines]);
 
   const filteredWines = useMemo(() => {
-    const filtered = allWines.filter((wine) => {
+    const filtered = wines.filter((wine) => {
       const matchesSearch =
         wine.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         wine.taste.toLowerCase().includes(searchTerm.toLowerCase());
 
       const matchesFilter = activeFilter === 'all' ||
         (activeFilter === 'ready' && isReadyToDrink(wine.drinkingWindow)) ||
-        (activeFilter === 'inStock' && (inventory[wine.id] || 0) > 0);
+        (activeFilter === 'inStock' && (wine.inventory || 0) > 0);
 
       const matchesCountry = !selectedCountry || getCountryCode(wine.name) === selectedCountry;
 
@@ -197,29 +139,27 @@ function App() {
         case 'rating-desc':
           return parseRating(b.rating) - parseRating(a.rating);
         case 'user-rating-desc':
-          const ratingA = userRatings[a.id]?.rating ?? a.userRating ?? 0;
-          const ratingB = userRatings[b.id]?.rating ?? b.userRating ?? 0;
-          return ratingB - ratingA;
+          return (b.userRating || 0) - (a.userRating || 0);
         default:
           return a.name.localeCompare(b.name);
       }
     });
-  }, [allWines, searchTerm, activeFilter, selectedCountry, inventory, sortBy, userRatings]);
+  }, [wines, searchTerm, activeFilter, selectedCountry, sortBy]);
 
   const stats = useMemo(() => {
-    const rated = Object.values(userRatings).filter(u => u.rating > 0);
-    const avg = rated.length > 0 ? rated.reduce((acc, curr) => acc + curr.rating, 0) / rated.length : 0;
-    const readyCount = allWines.filter(w => isReadyToDrink(w.drinkingWindow)).length;
-    const inStockCount = allWines.filter(w => (inventory[w.id] || 0) > 0).length;
+    const rated = wines.filter(w => (w.userRating || 0) > 0);
+    const avg = rated.length > 0 ? rated.reduce((acc, curr) => acc + (curr.userRating || 0), 0) / rated.length : 0;
+    const readyCount = wines.filter(w => isReadyToDrink(w.drinkingWindow)).length;
+    const inStockCount = wines.filter(w => (w.inventory || 0) > 0).length;
 
     return {
-      count: allWines.length,
+      count: wines.length,
       rated: rated.length,
       avg: avg.toFixed(1),
       ready: readyCount,
       inStock: inStockCount
     };
-  }, [allWines, userRatings, inventory]);
+  }, [wines]);
 
   return (
     <div className="min-h-screen flex bg-stone-50">
@@ -270,18 +210,9 @@ function App() {
               Wein hinzufügen
             </button>
             <div className="py-2 border-t border-white/10 my-2" />
-            <button 
-              onClick={handleExport}
-              className="w-full flex items-center gap-3 px-4 py-3 hover:bg-white/5 rounded-xl text-white/70 hover:text-white transition-colors"
-            >
-              <Download size={20} />
-              Synchronisieren
-            </button>
-            <label className="w-full flex items-center gap-3 px-4 py-3 hover:bg-white/5 rounded-xl text-white/70 hover:text-white transition-colors cursor-pointer">
-              <Upload size={20} />
-              Importieren
-              <input type="file" className="hidden" accept=".json" onChange={handleImport} />
-            </label>
+            <div className="px-4 py-3 text-white/40 text-xs italic">
+              Alle Änderungen werden automatisch in die Cloud synchronisiert.
+            </div>
           </nav>
         </div>
         
@@ -396,11 +327,11 @@ function App() {
                 <WineCard
                   key={wine.id}
                   wine={wine}
-                  userData={userRatings[wine.id]}
-                  inventory={inventory[wine.id] || 0}
+                  userData={{ rating: wine.userRating || 0, comment: wine.userComment || '' }}
+                  inventory={wine.inventory || 0}
                   onUpdate={handleUpdate}
                   onInventoryChange={handleInventoryChange}
-                  onSync={handleSyncToTxt}
+                  onSync={() => {}}
                 />
               ))}
             </div>
