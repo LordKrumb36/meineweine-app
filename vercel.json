@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "buildCommand": "cd meineweine-app && npm install && npm run build",
+  "outputDirectory": "meineweine-app/dist",
+  "cleanUrls": true
+}
