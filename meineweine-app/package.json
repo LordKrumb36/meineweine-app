@@ -1,23 +1,16 @@
 {
   "name": "weinlager-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Weinlager React App with Supabase",
+  "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "start-sync": "node server.js",
     "dev:all": "concurrently \"npm run dev\" \"npm run start-sync\"",
-    "sync:all": "node ../sync_to_export.js && node ../sync_weine.js",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/LordKrumb36/meineweine-app.git",
-    "publish": "npm run deploy && cd .. && git add -A && git commit -m \"chore: deploy latest version\" && git push origin main && npx vercel --prod --yes"
+    "sync:all": "node ../sync_to_export.cjs && node ../sync_weine.cjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0",
     "clsx": "^2.1.1",
