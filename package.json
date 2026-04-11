@@ -1,0 +1,16 @@
+{
+  "name": "weinlager-sync",
+  "version": "1.0.0",
+  "description": "Backup and Sync for Weinlager App",
+  "main": "sync_weine.js",
+  "type": "module",
+  "scripts": {
+    "backup": "node sync-from-supabase.mjs",
+    "sync": "node sync_weine.cjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
+    "xlsx": "^0.18.5"
+  }
+}

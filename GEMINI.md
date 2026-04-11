@@ -1,4 +1,4 @@
-# Weinlager App - Workflow Overview (Stand: 10. April 2026)
+# Weinlager App - Workflow Overview (Stand: 11. April 2026)
 
 ## Core Commands
 - **Start Development & Sync Servers:** 
@@ -9,28 +9,30 @@
   - App: `http://localhost:5173`
   - Sync Server: `http://localhost:3001` (Runs in background)
 
+- **Cloud Backup (Cloud -> Lokal):**
+  ```powershell
+  # Im Hauptverzeichnis ausführen
+  npm run backup
+  ```
+  - Lädt alle Daten aus Supabase (Cloud) herunter.
+  - Aktualisiert `Weinlager_Details.txt` und `Weinlager_Details.xlsx` lokal.
+
 ## Application Workflow
-1. **Add Wine:** Use the "Wein hinzufügen" button in the app. Es schreibt direkt in `Weinlager_Details.txt`.
-2. **Synchronize:** Click the **"Synchronisieren"** button. Das triggert:
-   - `sync_weine.js`: Schreibt von TXT in Excel (`.xlsx`).
-   - `sync_to_export.js`: Schreibt von TXT in JSON (`wines.json`).
-3. **Auto-Import & Monitoring:** 
-   - **Weine.pdf:** Neue Einträge in der PDF werden beim Sync automatisch als neue Zeilen in `Weinlager_Details.txt` importiert.
-   - **Bestellungen:** `bestellungen lobenberg.txt` wird auf Vollständigkeit geprüft.
+1. **Online Nutzung (Handy/PC):** Nutze [https://meineweine-app.vercel.app/](https://meineweine-app.vercel.app/).
+2. **Datenänderung:** Alle Ratings, Kommentare und Bestandsänderungen gehen direkt in die **Supabase Cloud**.
+3. **Lokales Backup & Excel:** Führe `npm run backup` am PC aus, um deine lokalen Dateien (`.txt`, `.xlsx`, `.json`) mit der Cloud zu synchronisieren.
+4. **PDF-Import:** Neue Weine in `Weine.pdf` werden beim lokalen Sync weiterhin in `Weinlager_Details.txt` importiert und können danach in die Cloud migriert werden.
 
-## Technische Neuerungen & Updates (10.04.2026)
-- **User-Daten Sync (10.04.):** Manuelle User-Bewertungen und Kommentare (z.B. ID 55) werden nun über Git versioniert und konsistent in alle Export-Formate (`.json`, `.xlsx`) synchronisiert.
-- **Erweiterte Sortierung (05.04.):** Weine können im Frontend nach Preis, Fachbewertung (normalisierte 100-Punkte-Skala) und eigenem Urteil sortiert werden.
-- **Data Parsing & Normalisierung:** Automatische Konvertierung von Preis- und Bewertungsstrings in numerische Werte zur korrekten Sortierung.
-- **Dynamische Pfade:** Alle Skripte nutzen `__dirname` für Verzeichnis-Portabilität.
-
-## Zukünftige Planung (Cloud Migration)
-- **Supabase Integration:** Umstellung von lokalen Files auf eine Cloud-Datenbank für Smartphone-Zugriff von unterwegs.
-- **Vercel Serverless Functions:** Ablösung des lokalen `server.js` für echten Online-Betrieb der Vercel-App.
-- **Authentication:** Implementierung eines Logins für sicheren, privaten Zugriff über das Internet.
+## Technische Neuerungen & Updates (11.04.2026)
+- **Full Cloud Migration (11.04.):** Die App nutzt nun **Supabase** als zentrale Datenbank. Alle Daten (Weine, Ratings, Kommentare, Bestand) sind auf allen Geräten synchron.
+- **Vercel Deployment (11.04.):** Die App ist unter einer öffentlichen URL erreichbar und nutzt Vercel Environment Variables für die DB-Anbindung.
+- **Cloud-to-Local Sync (11.04.):** Neues Backup-System (`npm run backup`) sichert Cloud-Daten lokal in TXT und Excel.
+- **User-Daten Sync (10.04.):** Manuelle User-Bewertungen werden konsistent synchronisiert.
+- **Erweiterte Sortierung (05.04.):** Weine im Frontend nach Preis, Fachbewertung und eigenem Urteil sortierbar.
 
 ## File Structure
-- `Weinlager_Details.txt`: Master-Liste (Markdown).
-- `Weinlager_Details.xlsx`: Excel-Bericht.
-- `Weine.pdf`: Referenz-Quelle für Importe.
-- `meineweine-app/src/data/wines.json`: Frontend-Datenquelle.
+- `Weinlager_Details.txt`: Lokales Master-Backup (Markdown).
+- `Weinlager_Details.xlsx`: Lokaler Excel-Bericht.
+- `sync-from-supabase.mjs`: Script für Cloud -> Lokal Sync.
+- `meineweine-app/src/utils/supabaseClient.ts`: Cloud-Anbindung.
+- `meineweine-app/src/data/wines.json`: Lokale Kopie der Frontend-Datenquelle.
