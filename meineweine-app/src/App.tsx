@@ -176,7 +176,7 @@ function App() {
             <div className="bg-white/10 p-2 rounded-lg backdrop-blur-sm">
               <Wine size={24} />
             </div>
-            <h1 className="text-xl font-serif font-bold tracking-tight">Meine Weine</h1>
+            <h1 className="text-xl font-serif font-bold tracking-tight">Meine Wein-Cloud</h1>
           </div>
           
           <nav className="space-y-1">
