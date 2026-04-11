@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "meineweine-app/dist",
+  "framework": "vite"
+}
