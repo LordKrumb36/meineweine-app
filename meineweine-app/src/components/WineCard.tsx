@@ -30,7 +30,8 @@ interface WineCardProps {
 export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChange, onSync }: WineCardProps) {
   const currentRating = userData?.rating !== undefined ? userData.rating : (wine.userRating || 0);
   const currentComment = userData?.comment !== undefined ? userData.comment : (wine.userComment || '');
-  const isCustom = wine.id.startsWith('custom-');
+  const wineIdStr = wine.id.toString();
+  const isCustom = wineIdStr.startsWith('custom-');
   const isInStock = inventory > 0;
 
   return (

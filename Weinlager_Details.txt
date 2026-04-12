@@ -1,4 +1,4 @@
-# Weinlager Details (Backup aus Cloud vom 11.4.2026)
+# Weinlager Details (Backup aus Cloud vom 12.4.2026)
 
 | Wine | Drinking Window | Expert Rating | Price | Inventory | User Rating | User Comment |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
