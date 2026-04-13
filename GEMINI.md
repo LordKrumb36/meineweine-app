@@ -1,4 +1,4 @@
-# Weinlager App - Workflow Overview (Stand: 11. April 2026)
+# Weinlager App - Workflow Overview (Stand: 13. April 2026)
 
 ## Core Commands
 - **Cloud Backup (Cloud -> Lokal):**
@@ -20,20 +20,20 @@
 
 ## Application Workflow
 1. **Online Nutzung (Handy/PC):** Nutze [https://meineweine-app.vercel.app/](https://meineweine-app.vercel.app/).
-2. **Datenänderung:** Jede Änderung (Rating, Kommentar, Flaschenanzahl) wird **sofort** in die Supabase Cloud synchronisiert.
+2. **Datenänderung:** Jede Änderung (Hinzufügen, Löschen, Rating, Kommentar, Flaschenanzahl) wird **sofort** in die Supabase Cloud synchronisiert.
 3. **Lokales Backup & Excel:** Führe regelmäßig `npm run backup` am PC aus, um deine lokalen Dateien (`.txt`, `.xlsx`) zu aktualisieren.
 4. **Mobile Nutzung:** Die App ist optimiert für Smartphones mit einem ausklappbaren Hamburger-Menü für die Sidebar.
 
 ## Technische Highlights
-- **Full Cloud Persistence:** Zentrale Datenhaltung in Supabase (PostgreSQL).
+- **Full Cloud Persistence:** Zentrale Datenhaltung in Supabase (PostgreSQL). Neue Weine erhalten automatisch IDs und werden formatiert.
 - **Vercel Deployment:** Automatischer Build & Deploy bei jedem Git-Push.
 - **Responsive Design:** Sidebar-Overlay für mobile Geräte und kompakte Header-Anzeige.
-- **Robustes Error-Handling:** Die App erkennt Verbindungsabbrüche und fehlende Cloud-Konfigurationen.
-- **Legacy Sync Support:** Skripte wurden auf `.cjs` umgestellt, um ESM-Kompatibilität zu gewährleisten.
+- **Robustes Error-Handling:** Die App erkennt Verbindungsabbrüche und liefert detaillierte Fehlermeldungen bei Supabase-Problemen.
+- **Datenverwaltung:** Volle CRUD-Unterstützung (Erstellen, Lesen, Aktualisieren, Löschen) direkt über das UI.
 
 ## File Structure
 - `Weinlager_Details.txt`: Lokales Master-Backup im Markdown-Format.
 - `Weinlager_Details.xlsx`: Generierter Excel-Bericht für die Offline-Ansicht.
 - `sync-from-supabase.mjs`: Zentrales Backup-Skript (Cloud -> Lokal).
 - `meineweine-app/src/utils/supabaseClient.ts`: Verbindungskonfiguration zur Cloud.
-- `meineweine-app/src/App.tsx`: Hauptanwendung mit Cloud-Logik und mobilem Menü.
+- `meineweine-app/src/App.tsx`: Hauptanwendung mit Cloud-Logik, mobilem Menü und CRUD-Funktionen.

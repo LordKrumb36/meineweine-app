@@ -1637,5 +1637,16 @@
     "userRating": 0,
     "userComment": "Recht leicht, süffig. wenig Tiefe",
     "inventory": 0
+  },
+  {
+    "id": "150",
+    "name": "Dolde Linsenhöfer Spätburgunder Fass 1 2021",
+    "drinkingWindow": "2021 – 2031",
+    "rating": "-",
+    "price": "-",
+    "taste": "-",
+    "userRating": 0,
+    "userComment": "Leicht, relativ säuerlich, nicht sehr komplex, süffig",
+    "inventory": 0
   }
 ]
