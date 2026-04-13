@@ -254,7 +254,7 @@ function App() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 pb-10">
                 {filteredWines.map((wine) => (
-                  <WineCard key={wine.id} wine={wine} userData={{ rating: wine.userRating || 0, comment: wine.userComment || '' }} inventory={wine.inventory || 0} onUpdate={handleUpdate} onInventoryChange={handleInventoryChange} onSync={() => {}} />
+                  <WineCard key={wine.id} wine={wine} userData={{ rating: wine.userRating || 0, comment: wine.userComment || '' }} inventory={wine.inventory || 0} onUpdate={handleUpdate} onInventoryChange={handleInventoryChange} onDelete={handleDeleteWine} onSync={() => {}} />
                 ))}
               </div>
             </div>
