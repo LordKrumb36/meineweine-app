@@ -70,12 +70,50 @@ function App() {
   };
 
   const handleAddWine = async (newWine: WineData, initialQuantity: number = 1) => {
+    console.log('--- handleAddWine gestartet ---', newWine);
     try {
-      const { error: dbError } = await supabase.from('wines').insert([{ ...newWine, inventory: initialQuantity }]);
-      if (dbError) throw dbError;
-      fetchWines();
+      // Extrahiere Jahr, Land und Typ
+      const yearMatch = newWine.name.match(/\b(19|20)\d{2}\b/);
+      const year = yearMatch ? parseInt(yearMatch[0]) : 
+                   (newWine.drinkingWindow ? parseInt(newWine.drinkingWindow.split(/[-–]/)[0]) : null);
+      
+      const countryMatch = newWine.name.match(/\(([A-Z]{2,3})\)$/);
+      const country = countryMatch ? countryMatch[1] : null;
+
+      const type = newWine.name.toLowerCase().includes('rosé') ? 'Rosé' : 
+                   (newWine.name.toLowerCase().includes('weiß') ? 'Weiß' : 'Rot');
+
+      const priceNum = parseFloat(newWine.price.replace(/[€$~\s]/g, '').replace(',', '.')) || 0;
+
+      const dbWine = {
+        name: newWine.name,
+        year: year,
+        type: type,
+        country: country,
+        price: priceNum,
+        rating: newWine.rating,
+        profile: newWine.taste,
+        userRating: newWine.userRating || 0,
+        userComment: newWine.userComment || '',
+        inventory: initialQuantity
+      };
+
+      console.log('Sende an Supabase:', dbWine);
+      const { data, error: dbError } = await supabase.from('wines').insert([dbWine]).select();
+      
+      if (dbError) {
+        console.error('Supabase Error Details:', dbError);
+        throw new Error(`DB-Fehler: ${dbError.message} (${dbError.code}) - Details: ${JSON.stringify(dbError)}`);
+      }
+      
+      console.log('Erfolgreich eingefügt:', data);
+      await fetchWines();
       setIsAddModalOpen(false);
-    } catch (err) { alert('Fehler beim Hinzufügen'); }
+    } catch (err: any) { 
+      console.error('Add wine CRASH:', err);
+      const errorMsg = err instanceof Error ? err.message : JSON.stringify(err);
+      alert('DEBUG-ALARM: ' + errorMsg); 
+    }
   };
 
   const availableCountries = useMemo(() => {
