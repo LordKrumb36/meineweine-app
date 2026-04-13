@@ -85,7 +85,15 @@ function App() {
 
       const priceNum = parseFloat(newWine.price.replace(/[€$~\s]/g, '').replace(',', '.')) || 0;
 
+      // Ermittle die nächste verfügbare ID (da die DB keinen Auto-Inkrement hat)
+      const maxId = wines.reduce((max, w) => {
+        const idNum = parseInt(w.id);
+        return !isNaN(idNum) ? Math.max(max, idNum) : max;
+      }, 0);
+      const nextId = maxId + 1;
+
       const dbWine = {
+        id: nextId, // Manuelle ID-Vergabe
         name: newWine.name,
         year: year,
         type: type,
@@ -98,7 +106,7 @@ function App() {
         inventory: initialQuantity
       };
 
-      console.log('Sende an Supabase:', dbWine);
+      console.log('Sende an Supabase (mit ID ' + nextId + '):', dbWine);
       const { data, error: dbError } = await supabase.from('wines').insert([dbWine]).select();
       
       if (dbError) {
