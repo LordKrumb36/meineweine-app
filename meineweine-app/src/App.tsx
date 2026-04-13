@@ -69,6 +69,16 @@ function App() {
     } catch (err) { fetchWines(); }
   };
 
+  const handleDeleteWine = async (id: string) => {
+    try {
+      const { error: dbError } = await supabase.from('wines').delete().eq('id', id);
+      if (dbError) throw dbError;
+      setWines(prev => prev.filter(w => w.id !== id));
+    } catch (err: any) {
+      alert('Fehler beim Löschen: ' + (err.message || 'Datenbankfehler'));
+    }
+  };
+
   const handleAddWine = async (newWine: WineData, initialQuantity: number = 1) => {
     console.log('--- handleAddWine gestartet ---', newWine);
     try {

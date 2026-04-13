@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wine, Calendar, CreditCard, Droplets, MessageSquare, CloudUpload, Plus, Minus } from 'lucide-react';
+import { Wine, Calendar, CreditCard, Droplets, MessageSquare, CloudUpload, Plus, Minus, X } from 'lucide-react';
 import { Rating } from './Rating';
 
 export interface WineData {
@@ -24,10 +24,11 @@ interface WineCardProps {
   inventory: number;
   onUpdate: (id: string, data: Partial<UserWineData>) => void;
   onInventoryChange: (id: string, quantity: number) => void;
+  onDelete: (id: string) => void;
   onSync?: (wine: WineData) => void;
 }
 
-export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChange, onSync }: WineCardProps) {
+export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChange, onDelete, onSync }: WineCardProps) {
   const currentRating = userData?.rating !== undefined ? userData.rating : (wine.userRating || 0);
   const currentComment = userData?.comment !== undefined ? userData.comment : (wine.userComment || '');
   const wineIdStr = wine.id.toString();
@@ -35,19 +36,29 @@ export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChang
   const isInStock = inventory > 0;
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-shadow relative">
-      {isCustom && onSync && (
+    <div className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-shadow relative group/card">
+      <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover/card:opacity-100 transition-opacity z-10">
+        {isCustom && onSync && (
+          <button 
+            onClick={() => onSync(wine)}
+            className="p-1.5 bg-blue-50 text-blue-600 rounded-md hover:bg-blue-100 transition-colors"
+            title="In Weinlager_Details.txt speichern"
+          >
+            <CloudUpload size={16} />
+          </button>
+        )}
         <button 
-          onClick={() => onSync(wine)}
-          className="absolute top-4 right-12 p-1.5 bg-blue-50 text-blue-600 rounded-md hover:bg-blue-100 transition-colors group"
-          title="In Weinlager_Details.txt speichern"
+          onClick={() => {
+            if (window.confirm(`Möchtest du "${wine.name}" wirklich löschen?`)) {
+              onDelete(wine.id);
+            }
+          }}
+          className="p-1.5 bg-red-50 text-red-600 rounded-md hover:bg-red-100 transition-colors"
+          title="Wein löschen"
         >
-          <CloudUpload size={16} />
-          <span className="absolute bottom-full right-0 mb-2 hidden group-hover:block bg-stone-800 text-white text-[10px] py-1 px-2 rounded whitespace-nowrap">
-            In TXT speichern
-          </span>
+          <X size={16} />
         </button>
-      )}
+      </div>
       <div className="p-5">
         <div className="flex justify-between items-start mb-4">
           <div className="flex items-center gap-3">
