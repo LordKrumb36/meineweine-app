@@ -1,4 +1,4 @@
-# Weinlager App - Workflow Overview (Stand: 13. April 2026)
+# Weinlager App - Workflow Overview (Stand: 15. April 2026)
 
 ## Core Commands
 - **Cloud Backup (Cloud -> Lokal):**
@@ -20,16 +20,21 @@
 
 ## Application Workflow
 1. **Online Nutzung (Handy/PC):** Nutze [https://meineweine-app.vercel.app/](https://meineweine-app.vercel.app/).
-2. **Datenänderung:** Jede Änderung (Hinzufügen, Löschen, Rating, Kommentar, Flaschenanzahl) wird **sofort** in die Supabase Cloud synchronisiert.
+2. **Datenänderung:** Jede Änderung (Hinzufügen, Bearbeiten, Löschen, Rating, Kommentar, Flaschenanzahl) wird **sofort** in die Supabase Cloud synchronisiert.
 3. **Lokales Backup & Excel:** Führe regelmäßig `npm run backup` am PC aus, um deine lokalen Dateien (`.txt`, `.xlsx`) zu aktualisieren.
-4. **Mobile Nutzung:** Die App ist optimiert für Smartphones mit einem ausklappbaren Hamburger-Menü für die Sidebar.
+4. **Mobile Nutzung:** Die App ist optimiert für Smartphones mit einem ausklappbaren Hamburger-Menü und permanent sichtbaren Aktions-Buttons (Edit/Löschen).
 
 ## Technische Highlights
-- **Full Cloud Persistence:** Zentrale Datenhaltung in Supabase (PostgreSQL). Neue Weine erhalten automatisch IDs und werden formatiert.
+- **Full Cloud Persistence:** Zentrale Datenhaltung in Supabase (PostgreSQL).
 - **Vercel Deployment:** Automatischer Build & Deploy bei jedem Git-Push.
-- **Responsive Design:** Sidebar-Overlay für mobile Geräte und kompakte Header-Anzeige.
-- **Robustes Error-Handling:** Die App erkennt Verbindungsabbrüche und liefert detaillierte Fehlermeldungen bei Supabase-Problemen.
-- **Datenverwaltung:** Volle CRUD-Unterstützung (Erstellen, Lesen, Aktualisieren, Löschen) direkt über das UI.
+- **Responsive Design:** 
+  - Sidebar-Overlay für mobile Geräte.
+  - Aktions-Buttons (Stift, X) sind mobil immer sichtbar, am PC erst bei Hover.
+  - Layout-Schutz gegen Überlagerung von Buttons und Ratings auf schmalen Displays.
+- **Datenverwaltung:** 
+  - Volle CRUD-Unterstützung (Create, Read, Update, Delete) über das UI.
+  - Erweiterte Sortierung: Name, Preis, Rating, Jahrgang und "Neu hinzugefügt" (Standard).
+- **ID-Management:** Manuelle ID-Vergabe (Max+1) für neue Weine zur Gewährleistung der Konsistenz.
 
 ## File Structure
 - `Weinlager_Details.txt`: Lokales Master-Backup im Markdown-Format.
