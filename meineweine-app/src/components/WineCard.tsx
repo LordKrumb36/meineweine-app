@@ -69,7 +69,7 @@ export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChang
         </button>
       </div>
       <div className="p-5">
-        <div className="flex justify-between items-start mb-4">
+        <div className="flex justify-between items-start mb-4 md:pr-0 pr-24">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-wine-50 rounded-lg text-wine-600">
               <Wine size={24} />
