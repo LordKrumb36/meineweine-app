@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wine, Calendar, CreditCard, Droplets, MessageSquare, CloudUpload, Plus, Minus, X } from 'lucide-react';
+import { Wine, Calendar, CreditCard, Droplets, MessageSquare, CloudUpload, Plus, Minus, X, Pencil } from 'lucide-react';
 import { Rating } from './Rating';
 
 export interface WineData {
@@ -11,6 +11,7 @@ export interface WineData {
   taste: string;
   userRating?: number;
   userComment?: string;
+  inventory?: number;
 }
 
 export interface UserWineData {
@@ -25,10 +26,11 @@ interface WineCardProps {
   onUpdate: (id: string, data: Partial<UserWineData>) => void;
   onInventoryChange: (id: string, quantity: number) => void;
   onDelete: (id: string) => void;
+  onEdit: (wine: WineData) => void;
   onSync?: (wine: WineData) => void;
 }
 
-export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChange, onDelete, onSync }: WineCardProps) {
+export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChange, onDelete, onEdit, onSync }: WineCardProps) {
   const currentRating = userData?.rating !== undefined ? userData.rating : (wine.userRating || 0);
   const currentComment = userData?.comment !== undefined ? userData.comment : (wine.userComment || '');
   const wineIdStr = wine.id.toString();
@@ -38,6 +40,13 @@ export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChang
   return (
     <div className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-shadow relative group/card">
       <div className="absolute top-4 right-4 flex gap-2 md:opacity-0 md:group-hover/card:opacity-100 transition-opacity z-10">
+        <button 
+          onClick={() => onEdit(wine)}
+          className="p-1.5 bg-stone-50 text-stone-600 rounded-md hover:bg-stone-100 transition-colors"
+          title="Wein bearbeiten"
+        >
+          <Pencil size={16} />
+        </button>
         {isCustom && onSync && (
           <button 
             onClick={() => onSync(wine)}

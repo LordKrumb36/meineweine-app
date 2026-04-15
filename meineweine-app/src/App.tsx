@@ -27,6 +27,7 @@ function App() {
   const [sortBy, setSortBy] = useState<SortType>('name');
   const [selectedCountry, setSelectedCountry] = useState('');
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [editingWine, setEditingWine] = useState<WineData | null>(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
   useEffect(() => { fetchWines(); }, []);
@@ -79,6 +80,11 @@ function App() {
     }
   };
 
+  const handleEditClick = (wine: WineData) => {
+    setEditingWine(wine);
+    setIsAddModalOpen(true);
+  };
+
   const handleAddWine = async (newWine: WineData, initialQuantity: number = 1) => {
     console.log('--- handleAddWine gestartet ---', newWine);
     try {
@@ -95,15 +101,7 @@ function App() {
 
       const priceNum = parseFloat(newWine.price.replace(/[€$~\s]/g, '').replace(',', '.')) || 0;
 
-      // Ermittle die nächste verfügbare ID (da die DB keinen Auto-Inkrement hat)
-      const maxId = wines.reduce((max, w) => {
-        const idNum = parseInt(w.id);
-        return !isNaN(idNum) ? Math.max(max, idNum) : max;
-      }, 0);
-      const nextId = maxId + 1;
-
-      const dbWine = {
-        id: nextId, // Manuelle ID-Vergabe
+      const dbPayload: any = {
         name: newWine.name,
         year: year,
         type: type,
@@ -116,21 +114,31 @@ function App() {
         inventory: initialQuantity
       };
 
-      console.log('Sende an Supabase (mit ID ' + nextId + '):', dbWine);
-      const { data, error: dbError } = await supabase.from('wines').insert([dbWine]).select();
-      
-      if (dbError) {
-        console.error('Supabase Error Details:', dbError);
-        throw new Error(`DB-Fehler: ${dbError.message} (${dbError.code}) - Details: ${JSON.stringify(dbError)}`);
+      if (editingWine) {
+        const { error: dbError } = await supabase
+          .from('wines')
+          .update(dbPayload)
+          .eq('id', editingWine.id);
+        
+        if (dbError) throw dbError;
+      } else {
+        // Neuen Wein hinzufügen
+        const maxId = wines.reduce((max, w) => {
+          const idNum = parseInt(w.id);
+          return !isNaN(idNum) ? Math.max(max, idNum) : max;
+        }, 0);
+        
+        dbPayload.id = maxId + 1;
+        const { error: dbError } = await supabase.from('wines').insert([dbPayload]);
+        if (dbError) throw dbError;
       }
       
-      console.log('Erfolgreich eingefügt:', data);
       await fetchWines();
       setIsAddModalOpen(false);
+      setEditingWine(null);
     } catch (err: any) { 
-      console.error('Add wine CRASH:', err);
-      const errorMsg = err instanceof Error ? err.message : JSON.stringify(err);
-      alert('DEBUG-ALARM: ' + errorMsg); 
+      console.error('Save wine error:', err);
+      alert('Speichern fehlgeschlagen: ' + (err.message || 'Unbekannter Fehler')); 
     }
   };
 
@@ -187,7 +195,16 @@ function App() {
 
   return (
     <div className="min-h-screen flex bg-stone-50">
-      <AddWineModal isOpen={isAddModalOpen} onClose={() => setIsAddModalOpen(false)} onAdd={handleAddWine} />
+      <AddWineModal 
+        isOpen={isAddModalOpen} 
+        onClose={() => {
+          setIsAddModalOpen(false);
+          setEditingWine(null);
+        }} 
+        onAdd={handleAddWine} 
+        wineToEdit={editingWine || undefined}
+        initialQuantity={editingWine?.inventory || 1}
+      />
 
       {/* Mobile Sidebar Overlay */}
       {isSidebarOpen && (

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Plus, Wine, Calendar, CreditCard, Droplets, Star, MessageSquare, Package } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { X, Plus, Wine, Calendar, CreditCard, Droplets, Star, MessageSquare, Package, Save } from 'lucide-react';
 import { WineData } from './WineCard';
 import { Rating } from './Rating';
 
@@ -7,9 +7,11 @@ interface AddWineModalProps {
   isOpen: boolean;
   onClose: () => void;
   onAdd: (wine: WineData, initialQuantity: number) => void;
+  wineToEdit?: WineData;
+  initialQuantity?: number;
 }
 
-export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
+export function AddWineModal({ isOpen, onClose, onAdd, wineToEdit, initialQuantity }: AddWineModalProps) {
   const [formData, setFormData] = useState({
     name: '',
     drinkingWindow: '',
@@ -21,6 +23,32 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
     quantity: 1
   });
 
+  useEffect(() => {
+    if (wineToEdit) {
+      setFormData({
+        name: wineToEdit.name || '',
+        drinkingWindow: wineToEdit.drinkingWindow || '',
+        rating: wineToEdit.rating || '',
+        price: wineToEdit.price || '',
+        taste: wineToEdit.taste || '',
+        userRating: wineToEdit.userRating || 0,
+        userComment: wineToEdit.userComment || '',
+        quantity: initialQuantity || 0
+      });
+    } else {
+      setFormData({
+        name: '',
+        drinkingWindow: '',
+        rating: '',
+        price: '',
+        taste: '',
+        userRating: 0,
+        userComment: '',
+        quantity: 1
+      });
+    }
+  }, [wineToEdit, initialQuantity, isOpen]);
+
   if (!isOpen) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -28,22 +56,12 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
     if (!formData.name) return;
 
     const { quantity, ...wineFields } = formData;
-    const newWine: WineData = {
-      id: `custom-${Date.now()}`,
+    const wineData: WineData = {
+      id: wineToEdit ? wineToEdit.id : `custom-${Date.now()}`,
       ...wineFields
     };
 
-    onAdd(newWine, quantity);
-    setFormData({
-      name: '',
-      drinkingWindow: '',
-      rating: '',
-      price: '',
-      taste: '',
-      userRating: 0,
-      userComment: '',
-      quantity: 1
-    });
+    onAdd(wineData, quantity);
     onClose();
   };
 
@@ -53,9 +71,11 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
         <div className="p-6 border-b border-stone-100 flex justify-between items-center bg-stone-50/50">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-wine-600 rounded-lg text-white">
-              <Plus size={20} />
+              {wineToEdit ? <Save size={20} /> : <Plus size={20} />}
             </div>
-            <h2 className="text-xl font-serif font-bold text-stone-900">Neuen Wein hinzufügen</h2>
+            <h2 className="text-xl font-serif font-bold text-stone-900">
+              {wineToEdit ? 'Wein bearbeiten' : 'Neuen Wein hinzufügen'}
+            </h2>
           </div>
           <button 
             onClick={onClose}
@@ -182,9 +202,9 @@ export function AddWineModal({ isOpen, onClose, onAdd }: AddWineModalProps) {
             </button>
             <button
               type="submit"
-              className="flex-1 px-4 py-2.5 bg-wine-600 text-white font-semibold rounded-xl hover:bg-wine-700 transition-colors shadow-lg shadow-wine-600/20"
+              className="flex-1 px-4 py-2.5 bg-wine-600 text-white font-semibold rounded-xl hover:bg-wine-700 transition-colors shadow-lg shadow-wine-600/20 flex items-center justify-center gap-2"
             >
-              Hinzufügen
+              {wineToEdit ? <><Save size={18} /> Speichern</> : 'Hinzufügen'}
             </button>
           </div>
         </form>
