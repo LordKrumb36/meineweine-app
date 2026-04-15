@@ -37,7 +37,7 @@ export function WineCard({ wine, userData, inventory, onUpdate, onInventoryChang
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-shadow relative group/card">
-      <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover/card:opacity-100 transition-opacity z-10">
+      <div className="absolute top-4 right-4 flex gap-2 md:opacity-0 md:group-hover/card:opacity-100 transition-opacity z-10">
         {isCustom && onSync && (
           <button 
             onClick={() => onSync(wine)}
