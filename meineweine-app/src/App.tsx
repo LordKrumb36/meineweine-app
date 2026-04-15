@@ -6,7 +6,7 @@ import { AddWineModal } from './components/AddWineModal';
 import { isReadyToDrink, parsePrice, parseRating } from './utils/wineUtils';
 
 type FilterType = 'all' | 'ready' | 'inStock';
-type SortType = 'name' | 'price-asc' | 'price-desc' | 'rating-desc' | 'user-rating-desc';
+type SortType = 'name' | 'price-asc' | 'price-desc' | 'rating-desc' | 'user-rating-desc' | 'year-desc' | 'newest';
 
 const COUNTRY_NAMES: Record<string, string> = {
   AR: 'Argentinien', AT: 'Österreich', DE: 'Deutschland', ES: 'Spanien', FR: 'Frankreich', IT: 'Italien', PT: 'Portugal',
@@ -45,7 +45,9 @@ function App() {
         price: w.price ? `€${Number(w.price).toFixed(2)}` : '-',
         rating: w.rating || '-',
         taste: w.profile || '-',
-        drinkingWindow: w.year ? `${w.year} - ${w.year + 10}` : 'jetzt trinken'
+        drinkingWindow: w.year ? `${w.year} - ${w.year + 10}` : 'jetzt trinken',
+        year: w.year,
+        created_at: w.created_at
       }));
       setWines(normalized);
       if (normalized.length === 0) setError('Die Datenbank ist aktuell leer.');
@@ -164,6 +166,8 @@ function App() {
         case 'price-desc': return parsePrice(b.price) - parsePrice(a.price);
         case 'rating-desc': return parseRating(b.rating) - parseRating(a.rating);
         case 'user-rating-desc': return (b.userRating || 0) - (a.userRating || 0);
+        case 'year-desc': return (b.year || 0) - (a.year || 0);
+        case 'newest': return new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime() || parseInt(b.id) - parseInt(a.id);
         default: return a.name.localeCompare(b.name);
       }
     });
@@ -266,12 +270,29 @@ function App() {
                 </div>
                 <div className="flex gap-2 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0">
                   <select value={selectedCountry} onChange={(e) => setSelectedCountry(e.target.value)} className="px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm bg-white border border-stone-200 shadow-sm outline-none"><option value="">Alle Länder</option>{availableCountries.map(code => <option key={code} value={code}>{COUNTRY_NAMES[code] || code}</option>)}</select>
-                  <select value={sortBy} onChange={(e) => setSortBy(e.target.value as SortType)} className="px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm bg-white border border-stone-200 shadow-sm outline-none"><option value="name">Name</option><option value="price-asc">Preis ↑</option><option value="price-desc">Preis ↓</option><option value="user-rating-desc">Rating</option></select>
+                  <select value={sortBy} onChange={(e) => setSortBy(e.target.value as SortType)} className="px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm bg-white border border-stone-200 shadow-sm outline-none">
+                    <option value="newest">Neu hinzugefügt</option>
+                    <option value="name">Name</option>
+                    <option value="year-desc">Jahrgang</option>
+                    <option value="price-asc">Preis ↑</option>
+                    <option value="price-desc">Preis ↓</option>
+                    <option value="user-rating-desc">Rating</option>
+                  </select>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 pb-10">
                 {filteredWines.map((wine) => (
-                  <WineCard key={wine.id} wine={wine} userData={{ rating: wine.userRating || 0, comment: wine.userComment || '' }} inventory={wine.inventory || 0} onUpdate={handleUpdate} onInventoryChange={handleInventoryChange} onDelete={handleDeleteWine} onSync={() => {}} />
+                  <WineCard 
+                    key={wine.id} 
+                    wine={wine} 
+                    userData={{ rating: wine.userRating || 0, comment: wine.userComment || '' }} 
+                    inventory={wine.inventory || 0} 
+                    onUpdate={handleUpdate} 
+                    onInventoryChange={handleInventoryChange} 
+                    onDelete={handleDeleteWine} 
+                    onEdit={handleEditClick}
+                    onSync={() => {}} 
+                  />
                 ))}
               </div>
             </div>

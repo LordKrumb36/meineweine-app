@@ -12,6 +12,8 @@ export interface WineData {
   userRating?: number;
   userComment?: string;
   inventory?: number;
+  year?: number;
+  created_at?: string;
 }
 
 export interface UserWineData {
